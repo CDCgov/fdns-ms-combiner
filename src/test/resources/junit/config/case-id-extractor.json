@@ -1,0 +1,16 @@
+{
+    "file": {
+        "template": "listOfCaseIdentifiers_$DATE$",
+        "date-format": "YYYYMMddHHmmss"
+    },
+    "rows": [
+        {
+            "label": "Case ID",
+            "jsonPath": "$.extractor.UCID.id"
+        },
+        {
+            "label": "Case ID Hash",
+            "jsonPath": "$.extractor.UCID.hash"
+        }
+    ]
+}

@@ -1,0 +1,1793 @@
+{
+	"file": {
+		"date-format": "YYYYMMddHHmmss",
+		"template": "Hepatitis_$DATE$"
+	},
+	"rows": [
+		{
+			"description": "Message Profile Identifier",
+			"jsonPath": "$..MSH-21..EI-3",
+			"label": "MSH-21"
+		},
+		{
+			"description": "Local Subject ID",
+			"jsonPath": "$..PID-3..CX-1",
+			"label": "PID-3"
+		},
+		{
+			"description": "Birth Date",
+			"jsonPath": "$..PID-7..TS-1",
+			"label": "PID-7"
+		},
+		{
+			"description": "Subject's Sex",
+			"jsonPath": "$..PID-8",
+			"label": "PID-8"
+		},
+		{
+			"description": "Race Category",
+			"jsonPath": "$..PID-10..CE-1",
+			"label": "PID-10"
+		},
+		{
+			"description": "Other Race Text",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '32624-9')].OBX-5",
+			"label": "32624-9"
+		},
+		{
+			"description": "Ethnic Group",
+			"jsonPath": "$..PID-22..CE-1",
+			"label": "PID-22"
+		},
+		{
+			"description": "Country of Birth",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '78746-5')].OBX-5..*",
+			"label": "78746-5"
+		},
+		{
+			"description": "Other Birth Place",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '21842-0')].OBX-5",
+			"label": "21842-0"
+		},
+		{
+			"description": "Country of Usual Residence",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77983-5')].OBX-5..*",
+			"label": "77983-5"
+		},
+		{
+			"description": "Subject Address County",
+			"jsonPath": "$..PID-11..XAD-9",
+			"label": "PID-11.9"
+		},
+		{
+			"description": "Subject Address State",
+			"jsonPath": "$..PID-11..XAD-4",
+			"label": "PID-11.4"
+		},
+		{
+			"description": "Subject Address ZIP Code",
+			"jsonPath": "$..PID-11..XAD-5",
+			"label": "PID-11.5"
+		},
+		{
+			"description": "Date of Illness Onset",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '11368-8')].OBX-5..TS-1",
+			"label": "11368-8"
+		},
+		{
+			"description": "Illness End Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77976-9')].OBX-5",
+			"label": "77976-9"
+		},
+		{
+			"description": "Illness Duration",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77977-7')].OBX-5",
+			"label": "77977-7"
+		},
+		{
+			"description": "Illness Duration Units",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77977-7')].OBX-6.CE-1",
+			"label": "OBX-6 / 77977-7"
+		},
+		{
+			"description": "Pregnancy Status",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77996-7')].OBX-5..*",
+			"label": "77996-7"
+		},
+		{
+			"description": "Diagnosis Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77975-1')].OBX-5..TS-1",
+			"label": "77975-1"
+		},
+		{
+			"description": "Hospitalized",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77974-4')].OBX-5..*",
+			"label": "77974-4"
+		},
+		{
+			"description": "Admission Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '8656-1')].OBX-5..TS-1",
+			"label": "8656-1"
+		},
+		{
+			"description": "Discharge Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '8649-6')].OBX-5..TS-1",
+			"label": "8649-6"
+		},
+		{
+			"description": "Duration of Hospital Stay in Days",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '78033-8')].OBX-5..SN-2",
+			"label": "78033-8"
+		},
+		{
+			"description": "Subject Died",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77978-5')].OBX-5..*",
+			"label": "77978-5"
+		},
+		{
+			"description": "Deceased Date",
+			"jsonPath": "$..PID-29..TS-1",
+			"label": "PID-29"
+		},
+		{
+			"description": "Condition Code",
+			"jsonPath": "$..OBR-31..CE-1",
+			"label": "OBR-31"
+		},
+		{
+			"description": "Local Record ID",
+			"jsonPath": "$..OBR-3..EI-1",
+			"label": "OBR-3"
+		},
+		{
+			"description": "State Case Identifier",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77993-4')].OBX-5",
+			"label": "77993-4"
+		},
+		{
+			"description": "Legacy Case Identifier",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77997-5')].OBX-5",
+			"label": "77997-5"
+		},
+		{
+			"description": "Age at Case Investigation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77998-3')].OBX-5..SN-2",
+			"label": "77998-3"
+		},
+		{
+			"description": "Age Unit at Case Investigation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77998-3')].OBX-6.CE-1",
+			"label": "OBX-6 / 77998-3"
+		},
+		{
+			"description": "Case Disease Imported Code",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77982-7')].OBX-5",
+			"label": "77982-7"
+		},
+		{
+			"description": "Imported Country",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV153')].OBX-5..*",
+			"label": "INV153"
+		},
+		{
+			"description": "Imported State",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV154')].OBX-5..*",
+			"label": "INV154"
+		},
+		{
+			"description": "Imported City",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV155')].OBX-5",
+			"label": "INV155"
+		},
+		{
+			"description": "Imported County",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV156')].OBX-5",
+			"label": "INV156"
+		},
+		{
+			"description": "Country of Exposure",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77984-3')].OBX-5",
+			"label": "77984-3"
+		},
+		{
+			"description": "State or Province of Exposure",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77985-0')].OBX-5",
+			"label": "77985-0"
+		},
+		{
+			"description": "City of Exposure",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77986-8')].OBX-5",
+			"label": "77986-8"
+		},
+		{
+			"description": "County of Exposure",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77987-6')].OBX-5",
+			"label": "77987-6"
+		},
+		{
+			"description": "Transmission Mode",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77989-2')].OBX-5",
+			"label": "77989-2"
+		},
+		{
+			"description": "Case Class Status Code",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77990-0')].OBX-5..*",
+			"label": "77990-0"
+		},
+		{
+			"description": "Immediate National Notifiable Condition",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77965-2')].OBX-5",
+			"label": "77965-2"
+		},
+		{
+			"description": "Case Outbreak Indicator",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77980-1')].OBX-5..*",
+			"label": "77980-1"
+		},
+		{
+			"description": "Case Outbreak Name",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77981-9')].OBX-5",
+			"label": "77981-9"
+		},
+		{
+			"description": "Notification Result Status",
+			"jsonPath": "$..OBR-25",
+			"label": "OBR-25"
+		},
+		{
+			"description": "Jurisdiction Code",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77969-4')].OBX-5",
+			"label": "77969-4"
+		},
+		{
+			"description": "Reporting Source Type Code",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '48766-0')].OBX-5",
+			"label": "48766-0"
+		},
+		{
+			"description": "Reporting Source ZIP Code",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '52831-5')].OBX-5",
+			"label": "52831-5"
+		},
+		{
+			"description": "Binational Reporting Criteria",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77988-4')].OBX-5..*",
+			"label": "77988-4"
+		},
+		{
+			"description": "Person Reporting to CDC - Name",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '74549-7')].OBX-5",
+			"label": "74549-7"
+		},
+		{
+			"description": "Person Reporting to CDC - Phone Number",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '74548-9')].OBX-5",
+			"label": "74548-9"
+		},
+		{
+			"description": "Person Reporting to CDC - Email",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '74547-1')].OBX-5",
+			"label": "74547-1"
+		},
+		{
+			"description": "Case Investigation Start Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77979-3')].OBX-5",
+			"label": "77979-3"
+		},
+		{
+			"description": "Date First Electronically Submitted",
+			"jsonPath": "$..OBR-7..TS-1",
+			"label": "OBR-7"
+		},
+		{
+			"description": "Date of Electronic Case Notification to CDC",
+			"jsonPath": "$..OBR-22..TS-1",
+			"label": "OBR-22"
+		},
+		{
+			"description": "Date Reported",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77995-9')].OBX-5",
+			"label": "77995-9"
+		},
+		{
+			"description": "Earliest Date Reported to County",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77972-8')].OBX-5",
+			"label": "77972-8"
+		},
+		{
+			"description": "Earliest Date Reported to State",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77973-6')].OBX-5..TS-1",
+			"label": "77973-6"
+		},
+		{
+			"description": "MMWR Week",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77991-8')].OBX-5..SN-2",
+			"label": "77991-8"
+		},
+		{
+			"description": "MMWR Year",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77992-6')].OBX-5",
+			"label": "77992-6"
+		},
+		{
+			"description": "Date CDC Was First Verbally Notified of This Case ",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77994-2')].OBX-5",
+			"label": "77994-2"
+		},
+		{
+			"description": "Date First Reported to PHD",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77970-2')].OBX-5",
+			"label": "77970-2"
+		},
+		{
+			"description": "Reporting State",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77966-0')].OBX-5..*",
+			"label": "77966-0"
+		},
+		{
+			"description": "Reporting County",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77967-8')].OBX-5..*",
+			"label": "77967-8"
+		},
+		{
+			"description": "National Reporting Jurisdiction",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77968-6')].OBX-5..*",
+			"label": "77968-6"
+		},
+		{
+			"description": "Comment",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77999-1')].OBX-5",
+			"label": "77999-1"
+		},
+		{
+			"description": "Reason for Testing",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '67098-4')].OBX-5..*",
+			"label": "67098-4"
+		},
+		{
+			"description": "Other Reason for Testing",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV901')].OBX-5..*",
+			"label": "INV901"
+		},
+		{
+			"description": "Symptomatic",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV576')].OBX-5..*",
+			"label": "INV576"
+		},
+		{
+			"description": "Jaundiced (Symptom)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV578')].OBX-5..*",
+			"label": "INV578"
+		},
+		{
+			"description": "Due Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '11778-8')].OBX-5",
+			"label": "11778-8"
+		},
+		{
+			"description": "Previously Aware of Condition",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV650')].OBX-5..*",
+			"label": "INV650"
+		},
+		{
+			"description": "Provider of Care for Condition",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV651')].OBX-5..*",
+			"label": "INV651"
+		},
+		{
+			"description": "Diabetes",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV887')].OBX-5..*",
+			"label": "INV887"
+		},
+		{
+			"description": "Diabetes Diagnosis Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV842')].OBX-5",
+			"label": "INV842"
+		},
+		{
+			"description": "Liver Enzyme Test Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV825')].OBX-5",
+			"label": "INV825"
+		},
+		{
+			"description": "Liver Enzyme Test Result",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV850')].OBX-5",
+			"label": "INV850"
+		},
+		{
+			"description": "ALT/SGPT (LN)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '1742-6')].OBX-5..SN-2",
+			"label": "1742-6"
+		},
+		{
+			"description": "Liver Enzyme Upper Limit Normal",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV827')].OBX-5..SN-2",
+			"label": "INV827"
+		},
+		{
+			"description": "Liver Enzyme Test Result Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV826')].OBX-5",
+			"label": "INV826"
+		},
+		{
+			"description": "AST/SGOT (LN)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '1920-8')].OBX-5..SN-2",
+			"label": "1920-8"
+		},
+		{
+			"description": "Test Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV290')].OBX-5..*",
+			"label": "INV290"
+		},
+		{
+			"description": "Test Result",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV291')].OBX-5..*",
+			"label": "INV291"
+		},
+		{
+			"description": "total anti-HAV",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LP38316-3')].OBX-5..*",
+			"label": "LP38316-3"
+		},
+		{
+			"description": "IgM anti-HAV",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LP38318-9')].OBX-5..*",
+			"label": "LP38318-9"
+		},
+		{
+			"description": "total anti-HBc",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LP38323-9')].OBX-5..*",
+			"label": "LP38323-9"
+		},
+		{
+			"description": "IgM anti-HBc",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LP38325-4')].OBX-5..*",
+			"label": "LP38325-4"
+		},
+		{
+			"description": "HEP B Nucleic Acid Test (NAT)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LP38320-5')].OBX-5..*",
+			"label": "LP38320-5"
+		},
+		{
+			"description": "HBeAg",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LP38329-6')].OBX-5..*",
+			"label": "LP38329-6"
+		},
+		{
+			"description": "HBsAg",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LP38331-2')].OBX-5..*",
+			"label": "LP38331-2"
+		},
+		{
+			"description": "total anti-HCV",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LP38332-0')].OBX-5..*",
+			"label": "LP38332-0"
+		},
+		{
+			"description": "Supplemental anti-HCV assay (RIBA)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '5199-5')].OBX-5..*",
+			"label": "5199-5"
+		},
+		{
+			"description": "HCV RNA",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LP38335-3')].OBX-5..*",
+			"label": "LP38335-3"
+		},
+		{
+			"description": "total anti-HDV",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LP38345-2')].OBX-5..*",
+			"label": "LP38345-2"
+		},
+		{
+			"description": "total anti-HEV",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LP38350-2')].OBX-5..*",
+			"label": "LP38350-2"
+		},
+		{
+			"description": "Anti-HCV signal to cut-off ratio",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '48159-8')].OBX-5",
+			"label": "48159-8"
+		},
+		{
+			"description": "Placer Order Number",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB589')].OBX-5",
+			"label": "LAB589"
+		},
+		{
+			"description": "Filler Order Number",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB202')].OBX-5",
+			"label": "LAB202"
+		},
+		{
+			"description": "Test Ordered Name",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB112')].OBX-5",
+			"label": "LAB112"
+		},
+		{
+			"description": "Observation Date/Time",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB576')].OBX-5",
+			"label": "LAB576"
+		},
+		{
+			"description": "Specimen Action Code (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Ordering Provider",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB590')].OBX-5",
+			"label": "LAB590"
+		},
+		{
+			"description": "Results Rpt/Status Chng - Date/Time",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB580')].OBX-5",
+			"label": "LAB580"
+		},
+		{
+			"description": "Result Status",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB579')].OBX-5",
+			"label": "LAB579"
+		},
+		{
+			"description": "Parent Result (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Parent (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Reason for Study",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB578')].OBX-5",
+			"label": "LAB578"
+		},
+		{
+			"description": "Parent Universal Service Identifier (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Performed Name",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB101')].OBX-5",
+			"label": "LAB101"
+		},
+		{
+			"description": "Observation Sub-ID",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Result - Coded Qualitative (Non-organism)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB192')].OBX-5",
+			"label": "LAB192"
+		},
+		{
+			"description": "Test Result - Coded Organism",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB278')].OBX-5",
+			"label": "LAB278"
+		},
+		{
+			"description": "Test Result - Numeric",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB114')].OBX-5",
+			"label": "LAB114"
+		},
+		{
+			"description": "Units of Measure",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB115')].OBX-5",
+			"label": "LAB115"
+		},
+		{
+			"description": "Test Result - Text",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB208')].OBX-5",
+			"label": "LAB208"
+		},
+		{
+			"description": "Test Result - Encapsulated Data (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Unique identifier for Current sample (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Result - Reference Range",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB582')].OBX-5",
+			"label": "LAB582"
+		},
+		{
+			"description": "Test Result -Interpretation Flag",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB118')].OBX-5",
+			"label": "LAB118"
+		},
+		{
+			"description": "Observation Result Status",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB207')].OBX-5",
+			"label": "LAB207"
+		},
+		{
+			"description": "Specimen Collection Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB163')].OBX-5",
+			"label": "LAB163"
+		},
+		{
+			"description": "Test Method",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB105')].OBX-5",
+			"label": "LAB105"
+		},
+		{
+			"description": "Specimen Analyzed Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB108')].OBX-5",
+			"label": "LAB108"
+		},
+		{
+			"description": "Performing Laboratory Name",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB143')].OBX-5",
+			"label": "LAB143"
+		},
+		{
+			"description": "Performing Person Name",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB577')].OBX-5",
+			"label": "LAB577"
+		},
+		{
+			"description": "Placer Order Number (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Filler Order Number (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Ordered Name (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Observation Date/Time (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Specimen Action Code (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Ordering Provider (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Results Rpt/Status Chng - Date/Time (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Result Status (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Parent Result (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Parent (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Reason for Study (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Parent Universal Service Identifier (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Performed Name (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Observation Sub-ID (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Result - Coded Qualitative (Non-organism) (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Result - Coded Organism (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Result - Numeric (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Units of Measure (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Result - Text (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Result - Encapsulated Data (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Unique identifier for Current sample (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Result - Reference Range (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Result -Interpretation Flag (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Observation Result Status (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Specimen Collection Date (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Method (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Specimen Analyzed Date (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Performing Laboratory Name (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Performing Person Name (NEED DETAILS)",
+			"jsonPath": "$",
+			"label": "???"
+		},
+		{
+			"description": "Test Result Comments",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB104')].OBX-5",
+			"label": "LAB104"
+		},
+		{
+			"description": "Specimen ID",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB125')].OBX-5",
+			"label": "LAB125"
+		},
+		{
+			"description": "Specimen ID Placer Assigned Identifier",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB591')].OBX-5",
+			"label": "LAB591"
+		},
+		{
+			"description": "Specimen ID Filler Assigned Identifier",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB592')].OBX-5",
+			"label": "LAB592"
+		},
+		{
+			"description": "Specimen Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB203')].OBX-5",
+			"label": "LAB203"
+		},
+		{
+			"description": "Specimen Source Site",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB166')].OBX-5",
+			"label": "LAB166"
+		},
+		{
+			"description": "Specimen Role",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB593')].OBX-5",
+			"label": "LAB593"
+		},
+		{
+			"description": "Specimen Collection Amount",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB594')].OBX-5",
+			"label": "LAB594"
+		},
+		{
+			"description": "Specimen Description",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB581')].OBX-5",
+			"label": "LAB581"
+		},
+		{
+			"description": "Specimen Collection Date/Time",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB587')].OBX-5",
+			"label": "LAB587"
+		},
+		{
+			"description": "Specimen Received Date/Time",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB595')].OBX-5",
+			"label": "LAB595"
+		},
+		{
+			"description": "Epi-linked to another confirmed or probable case",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV217')].OBX-5..*",
+			"label": "INV217"
+		},
+		{
+			"description": "Contact with confirmed or suspected case",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV602')].OBX-5..*",
+			"label": "INV602"
+		},
+		{
+			"description": "Contact Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV603')].OBX-5..*",
+			"label": "INV603"
+		},
+		{
+			"description": "Contact Type Indicator",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV828')].OBX-5..*",
+			"label": "INV828"
+		},
+		{
+			"description": "Babysitter",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '43018001')].OBX-5..*",
+			"label": "43018001"
+		},
+		{
+			"description": "Child cared for by this patient",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC299')].OBX-5..*",
+			"label": "PHC299"
+		},
+		{
+			"description": "Household member (non-sexual)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC300')].OBX-5..*",
+			"label": "PHC300"
+		},
+		{
+			"description": "Playmate",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC301')].OBX-5..*",
+			"label": "PHC301"
+		},
+		{
+			"description": "Sexual partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '225517006')].OBX-5..*",
+			"label": "225517006"
+		},
+		{
+			"description": "Other Contact Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC1304')].OBX-5..*",
+			"label": "PHC1304"
+		},
+		{
+			"description": "Specify Other Contact Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV897')].OBX-5",
+			"label": "INV897"
+		},
+		{
+			"description": "Child or Employee in the child care facility",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV615')].OBX-5..*",
+			"label": "INV615"
+		},
+		{
+			"description": "Household contact of a Child or Employee in the child care facility",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV616')].OBX-5..*",
+			"label": "INV616"
+		},
+		{
+			"description": "Identified Hepatitis A case in the child care facility",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV896')].OBX-5..*",
+			"label": "INV896"
+		},
+		{
+			"description": "Sexual Preference",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV592')].OBX-5..*",
+			"label": "INV592"
+		},
+		{
+			"description": "Number of Male Sexual Partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV605')].OBX-5..SN-2",
+			"label": "INV605"
+		},
+		{
+			"description": "Number of Female Sexual Partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV606')].OBX-5..SN-1",
+			"label": "INV606"
+		},
+		{
+			"description": "Inject drugs not prescribed by a doctor",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV607')].OBX-5..*",
+			"label": "INV607"
+		},
+		{
+			"description": "Use street drugs but not inject",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV608')].OBX-5..*",
+			"label": "INV608"
+		},
+		{
+			"description": "Travel or Live Outside U.S. or Canada",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'TRAVEL30')].OBX-5..*",
+			"label": "TRAVEL30"
+		},
+		{
+			"description": "Countries Traveled or Lived Outside U.S. or Canada",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'TRAVEL31')].OBX-5..*",
+			"label": "TRAVEL31"
+		},
+		{
+			"description": "What was the principal reason for travel",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'TRAVEL16')].OBX-5..*",
+			"label": "TRAVEL16"
+		},
+		{
+			"description": "Household Travel Outside U.S. or Canada",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'TRAVEL32')].OBX-5..*",
+			"label": "TRAVEL32"
+		},
+		{
+			"description": "Household Countries Traveled to Outside U.S. or Canada",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'TRAVEL33')].OBX-5..*",
+			"label": "TRAVEL33"
+		},
+		{
+			"description": "Common-Source Outbreak",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV618')].OBX-5..*",
+			"label": "INV618"
+		},
+		{
+			"description": "Foodborne Outbreak-  infected food handler",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV609')].OBX-5..*",
+			"label": "INV609"
+		},
+		{
+			"description": "Foodborne Outbreak - NOT an infected food handler",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV610')].OBX-5..*",
+			"label": "INV610"
+		},
+		{
+			"description": "Food Item of Associated Outbreak",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV611')].OBX-5",
+			"label": "INV611"
+		},
+		{
+			"description": "Waterborne Outbreak",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV612')].OBX-5..*",
+			"label": "INV612"
+		},
+		{
+			"description": "Unidentified Source Outbreak",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV613')].OBX-5..*",
+			"label": "INV613"
+		},
+		{
+			"description": "Food Handler",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV621')].OBX-5..*",
+			"label": "INV621"
+		},
+		{
+			"description": "Ever Receive a  Vaccine",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC126')].OBX-5..*",
+			"label": "VAC126"
+		},
+		{
+			"description": "Ever Receive Immune Globulin",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC143')].OBX-5..*",
+			"label": "VAC143"
+		},
+		{
+			"description": "Total doses of vaccine",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC132')].OBX-5..SN-2",
+			"label": "VAC132"
+		},
+		{
+			"description": "Date of Last Dose",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC142')].OBX-5",
+			"label": "VAC142"
+		},
+		{
+			"description": "Date of Last IG Dose",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC144')].OBX-5",
+			"label": "VAC144"
+		},
+		{
+			"description": "Contact with confirmed or suspected case",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV602')].OBX-5..*",
+			"label": "INV602"
+		},
+		{
+			"description": "Contact Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV603')].OBX-5..*",
+			"label": "INV603"
+		},
+		{
+			"description": "Contact Type Indicator",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV828')].OBX-5..*",
+			"label": "INV828"
+		},
+		{
+			"description": "Household member (non-sexual)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC300')].OBX-5..*",
+			"label": "PHC300"
+		},
+		{
+			"description": "Sexual partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '225517006')].OBX-5..*",
+			"label": "225517006"
+		},
+		{
+			"description": "Other Contact Type ",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC1304')].OBX-5",
+			"label": "PHC1304"
+		},
+		{
+			"description": "Specify Other Contact Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV897')].OBX-5",
+			"label": "INV897"
+		},
+		{
+			"description": "Sexual Preference",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV592')].OBX-5..*",
+			"label": "INV592"
+		},
+		{
+			"description": "Number of Male Sexual Partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV605')].OBX-5..SN-2",
+			"label": "INV605"
+		},
+		{
+			"description": "Number of Female Sexual Partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV606')].OBX-5..SN-2",
+			"label": "INV606"
+		},
+		{
+			"description": "Treated for STD",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV653')].OBX-5..*",
+			"label": "INV653"
+		},
+		{
+			"description": "Year of Recent Treatment for STD",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV654')].OBX-5",
+			"label": "INV654"
+		},
+		{
+			"description": "Inject drugs not prescribed by a doctor",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV607')].OBX-5..*",
+			"label": "INV607"
+		},
+		{
+			"description": "Use street drugs but not inject",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV608')].OBX-5..*",
+			"label": "INV608"
+		},
+		{
+			"description": "Hemodialysis",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV583')].OBX-5..*",
+			"label": "INV583"
+		},
+		{
+			"description": "Contaminated Stick",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV655')].OBX-5..*",
+			"label": "INV655"
+		},
+		{
+			"description": "Blood Transfusion",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV580')].OBX-5..*",
+			"label": "INV580"
+		},
+		{
+			"description": "Blood Transfusion Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV614')].OBX-5",
+			"label": "INV614"
+		},
+		{
+			"description": "Outpatient IV Infusions and/or Injections",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV620')].OBX-5..*",
+			"label": "INV620"
+		},
+		{
+			"description": "Other Blood Exposure",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV617')].OBX-5..*",
+			"label": "INV617"
+		},
+		{
+			"description": "Other Blood Exposure Specify",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV898')].OBX-5",
+			"label": "INV898"
+		},
+		{
+			"description": "Medical/Dental Blood Worker",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV590')].OBX-5..*",
+			"label": "INV590"
+		},
+		{
+			"description": "Medical/Dental Blood Worker - Frequency of Blood Contact",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV594')].OBX-5..*",
+			"label": "INV594"
+		},
+		{
+			"description": "Public Safety Blood Worker",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV595')].OBX-5..*",
+			"label": "INV595"
+		},
+		{
+			"description": "Public Safety Blood Worker - Frequency of Blood Contact",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV596')].OBX-5..*",
+			"label": "INV596"
+		},
+		{
+			"description": "Tattoo",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV597')].OBX-5..*",
+			"label": "INV597"
+		},
+		{
+			"description": "Location(s) where the patient received a tattoo",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV598')].OBX-5..*",
+			"label": "INV598"
+		},
+		{
+			"description": "Other Location(s) where the patient received a tattoo",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV900')].OBX-5",
+			"label": "INV900"
+		},
+		{
+			"description": "Piercing",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV622')].OBX-5",
+			"label": "INV622"
+		},
+		{
+			"description": "Location(s) where the patient received a piercing (other than ear)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV623')].OBX-5..*",
+			"label": "INV623"
+		},
+		{
+			"description": "Other Location(s) where the patient received a Piercing",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV899')].OBX-5",
+			"label": "INV899"
+		},
+		{
+			"description": "Dental Work / Oral Surgery",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV633')].OBX-5..*",
+			"label": "INV633"
+		},
+		{
+			"description": "Surgery Other than Oral",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV634')].OBX-5..*",
+			"label": "INV634"
+		},
+		{
+			"description": "Tested For Hepatitis D",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV840')].OBX-5..*",
+			"label": "INV840"
+		},
+		{
+			"description": "Hepatitis Delta Infection",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV831')].OBX-5..*",
+			"label": "INV831"
+		},
+		{
+			"description": "Prior Negative Hepatitis Test",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV832')].OBX-5..*",
+			"label": "INV832"
+		},
+		{
+			"description": "Verified Test Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV843')].OBX-5",
+			"label": "INV843"
+		},
+		{
+			"description": "Hospitalized",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV635')].OBX-5..*",
+			"label": "INV635"
+		},
+		{
+			"description": "Long Term Care Resident",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV636')].OBX-5..*",
+			"label": "INV636"
+		},
+		{
+			"description": "Incarcerated more than 24 hours",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV637')].OBX-5..*",
+			"label": "INV637"
+		},
+		{
+			"description": "Type of Incarceration Facility",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV638')].OBX-5",
+			"label": "INV638"
+		},
+		{
+			"description": "Incarceration Type Indicator",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV833')].OBX-5",
+			"label": "INV833"
+		},
+		{
+			"description": "Jail",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'C1508776')].OBX-5..*",
+			"label": "C1508776"
+		},
+		{
+			"description": "Juvenile facility",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'C0680668')].OBX-5..*",
+			"label": "C0680668"
+		},
+		{
+			"description": "Prisons",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'C0033168')].OBX-5..*",
+			"label": "C0033168"
+		},
+		{
+			"description": "Incarcerated More Than 6 months",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV639')].OBX-5..*",
+			"label": "INV639"
+		},
+		{
+			"description": "Year of Most Recent Incarceration",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV640')].OBX-5",
+			"label": "INV640"
+		},
+		{
+			"description": "Length of Incarceration",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV641')].OBX-5",
+			"label": "INV641"
+		},
+		{
+			"description": "Did the subject ever receive a vaccine",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC126')].OBX-5..*",
+			"label": "VAC126"
+		},
+		{
+			"description": "Total Doses of Vaccine",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC132')].OBX-5..SN-2",
+			"label": "VAC132"
+		},
+		{
+			"description": "Date of Last Dose",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC142')].OBX-5",
+			"label": "VAC142"
+		},
+		{
+			"description": "Tested for HBsAg Antibodies",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'HEP190')].OBX-5..*",
+			"label": "HEP190"
+		},
+		{
+			"description": "HBsAg Antibodies Positive",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'HEP191')].OBX-5..*",
+			"label": "HEP191"
+		},
+		{
+			"description": "Mother's Race",
+			"jsonPath": "$..NK1-35.CE-1",
+			"label": "NK1-35"
+		},
+		{
+			"description": "Other Race for Mother",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'MTH171')].OBX-5",
+			"label": "MTH171"
+		},
+		{
+			"description": "Mother's Ethnicity",
+			"jsonPath": "$..NK1-28.CE-1",
+			"label": "MTH159"
+		},
+		{
+			"description": "Other Ethnicity for Mother",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'MTH170')].OBX-5",
+			"label": "MTH170"
+		},
+		{
+			"description": "Mother Born Outside U.S.",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'MTH161')].OBX-5..*",
+			"label": "MTH161"
+		},
+		{
+			"description": "Mother's Birth Country",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'MTH109')].OBX-5..*",
+			"label": "MTH109"
+		},
+		{
+			"description": "Mother Confirmed Positive Prior To Delivery",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'MTH162')].OBX-5..*",
+			"label": "MTH162"
+		},
+		{
+			"description": "Mother Confirmed Positive After Delivery",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'MTH163')].OBX-5..*",
+			"label": "MTH163"
+		},
+		{
+			"description": "Mother Confirmed Positive Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'MTH164')].OBX-5",
+			"label": "MTH164"
+		},
+		{
+			"description": "Total Doses of Vaccine",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC132')].OBX-5..SN-2",
+			"label": "VAC132"
+		},
+		{
+			"description": "Ever Receive Immune Globulin",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC143')].OBX-5..*",
+			"label": "VAC143"
+		},
+		{
+			"description": "Date the child received HBIG",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC144')].OBX-5",
+			"label": "VAC144"
+		},
+		{
+			"description": "Vaccine Dose Number",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC120')].OBX-5",
+			"label": "VAC120"
+		},
+		{
+			"description": "Vaccine Administered Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC103')].OBX-5",
+			"label": "VAC103"
+		},
+		{
+			"description": "Vaccine Dose Number",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC120')].OBX-5",
+			"label": "VAC120"
+		},
+		{
+			"description": "Vaccine Administered Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'VAC103')].OBX-5",
+			"label": "VAC103"
+		},
+		{
+			"description": "Number of Sex Partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV642')].OBX-5..SN-2",
+			"label": "INV642"
+		},
+		{
+			"description": "Treated for STD",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV653')].OBX-5..*",
+			"label": "INV653"
+		},
+		{
+			"description": "Injected Drug Use (IDU)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV643')].OBX-5..*",
+			"label": "INV643"
+		},
+		{
+			"description": "Ever had contact with Hepatitis",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV829')].OBX-5..*",
+			"label": "INV829"
+		},
+		{
+			"description": "Contact Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV830')].OBX-5..*",
+			"label": "INV830"
+		},
+		{
+			"description": "Contact Type Indicator",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV828')].OBX-5..*",
+			"label": "INV828"
+		},
+		{
+			"description": "Household member (non-sexual)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC300')].OBX-5..*",
+			"label": "PHC300"
+		},
+		{
+			"description": "Sexual partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '225517006')].OBX-5..*",
+			"label": "225517006"
+		},
+		{
+			"description": "Other Contact Type ",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC1304')].OBX-5..*",
+			"label": "PHC1304"
+		},
+		{
+			"description": "Specify Other Contact Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV897')].OBX-5",
+			"label": "INV897"
+		},
+		{
+			"description": "Long-Term Hemodialysis",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV644')].OBX-5..*",
+			"label": "INV644"
+		},
+		{
+			"description": "Clotting Factor before 1987",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV647')].OBX-5..*",
+			"label": "INV647"
+		},
+		{
+			"description": "Ever a Medical/ Dental Blood Worker",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV648')].OBX-5..*",
+			"label": "INV648"
+		},
+		{
+			"description": "Ever Incarcerated",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV649')].OBX-5..*",
+			"label": "INV649"
+		},
+		{
+			"description": "Mother's Birth Country",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'MTH109')].OBX-5..*",
+			"label": "MTH109"
+		},
+		{
+			"description": "Received Medication for condition",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV652')].OBX-5..*",
+			"label": "INV652"
+		},
+		{
+			"description": "Contact with confirmed or suspected case",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV602')].OBX-5..*",
+			"label": "INV602"
+		},
+		{
+			"description": "Contact Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV603')].OBX-5",
+			"label": "INV603"
+		},
+		{
+			"description": "Contact Type Indicator",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV828')].OBX-5",
+			"label": "INV828"
+		},
+		{
+			"description": "Household member (non-sexual)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC300')].OBX-5..*",
+			"label": "PHC300"
+		},
+		{
+			"description": "Sexual partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '225517006')].OBX-5..*",
+			"label": "225517006"
+		},
+		{
+			"description": "Other Contact Type ",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC1304')].OBX-5..*",
+			"label": "PHC1304"
+		},
+		{
+			"description": "Specify Other Contact Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV897')].OBX-5",
+			"label": "INV897"
+		},
+		{
+			"description": "Sexual Preference",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV592')].OBX-5..*",
+			"label": "INV592"
+		},
+		{
+			"description": "Number of Male Sexual Partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV605')].OBX-5..SN-2",
+			"label": "INV605"
+		},
+		{
+			"description": "Number of Female Sexual Partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV606')].OBX-5..SN-2",
+			"label": "INV606"
+		},
+		{
+			"description": "Treated for STD",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV653')].OBX-5..*",
+			"label": "INV653"
+		},
+		{
+			"description": "Year of Recent Treatment for STD",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV654')].OBX-5..*",
+			"label": "INV654"
+		},
+		{
+			"description": "Inject drugs not prescribed by a doctor",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV607')].OBX-5..*",
+			"label": "INV607"
+		},
+		{
+			"description": "Use of street drugs but not inject",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV608')].OBX-5..*",
+			"label": "INV608"
+		},
+		{
+			"description": "Hemodialysis",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV583')].OBX-5..*",
+			"label": "INV583"
+		},
+		{
+			"description": "Contaminated Stick",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV655')].OBX-5..*",
+			"label": "INV655"
+		},
+		{
+			"description": "Blood Transfusion",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV580')].OBX-5..*",
+			"label": "INV580"
+		},
+		{
+			"description": "Blood Transfusion Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV614')].OBX-5",
+			"label": "INV614"
+		},
+		{
+			"description": "Outpatient IV Infusions and/or Injections",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV620')].OBX-5..*",
+			"label": "INV620"
+		},
+		{
+			"description": "Other Blood Exposure",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV617')].OBX-5..*",
+			"label": "INV617"
+		},
+		{
+			"description": "Other Exposure to someone else's blood",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV898')].OBX-5",
+			"label": "INV898"
+		},
+		{
+			"description": "Medical/Dental Blood Worker",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV590')].OBX-5..*",
+			"label": "INV590"
+		},
+		{
+			"description": "Medical/Dental Blood Worker-Frequency of Blood Contact",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV594')].OBX-5..*",
+			"label": "INV594"
+		},
+		{
+			"description": "Public Safety Blood Worker",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV595')].OBX-5..*",
+			"label": "INV595"
+		},
+		{
+			"description": "Public Safety Blood Worker - Frequency of Blood Contact",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV596')].OBX-5..*",
+			"label": "INV596"
+		},
+		{
+			"description": "Tattoo",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV597')].OBX-5..*",
+			"label": "INV597"
+		},
+		{
+			"description": "Location(s) where the patient received a tattoo",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV598')].OBX-5..*",
+			"label": "INV598"
+		},
+		{
+			"description": "Other Location(s) where the patient received a tattoo",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV900')].OBX-5",
+			"label": "INV900"
+		},
+		{
+			"description": "Piercing",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV622')].OBX-5..*",
+			"label": "INV622"
+		},
+		{
+			"description": "Location(s) where the patient received a piercing (other than ear)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV623')].OBX-5..*",
+			"label": "INV623"
+		},
+		{
+			"description": "Other Location(s) where the patient received a Piercing",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV899')].OBX-5",
+			"label": "INV899"
+		},
+		{
+			"description": "Dental Work / Oral Surgery",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV633')].OBX-5",
+			"label": "INV633"
+		},
+		{
+			"description": "Surgery Other than Oral",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV634')].OBX-5..*",
+			"label": "INV634"
+		},
+		{
+			"description": "Prior Negative Hepatitis Test",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV832')].OBX-5..*",
+			"label": "INV832"
+		},
+		{
+			"description": "Verified Test Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV843')].OBX-5",
+			"label": "INV843"
+		},
+		{
+			"description": "Hospitalized",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV635')].OBX-5",
+			"label": "INV635"
+		},
+		{
+			"description": "Long Term Care Resident",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV636')].OBX-5..*",
+			"label": "INV636"
+		},
+		{
+			"description": "Incarcerated more than 24 hours",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV637')].OBX-5..*",
+			"label": "INV637"
+		},
+		{
+			"description": "Type of Incarceration Facility",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV638')].OBX-5..*",
+			"label": "INV638"
+		},
+		{
+			"description": "Incarceration Type Indicator",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV833')].OBX-5",
+			"label": "INV833"
+		},
+		{
+			"description": "Jail",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'C1508776')].OBX-5",
+			"label": "C1508776"
+		},
+		{
+			"description": "Juvenile facility",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'C0680668')].OBX-5",
+			"label": "C0680668"
+		},
+		{
+			"description": "Prisons",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'C0033168')].OBX-5",
+			"label": "C0033168"
+		},
+		{
+			"description": "Incarcerated More Than 6 months",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV639')].OBX-5..*",
+			"label": "INV639"
+		},
+		{
+			"description": "Year of Most Recent Incarceration",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV640')].OBX-5",
+			"label": "INV640"
+		},
+		{
+			"description": "Length of Incarceration",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV641')].OBX-5..SN-2",
+			"label": "INV641"
+		},
+		{
+			"description": "Received Medication for Condition",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV652')].OBX-5..*",
+			"label": "INV652"
+		},
+		{
+			"description": "Number of Sex Partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV642')].OBX-5..SN-2",
+			"label": "INV642"
+		},
+		{
+			"description": "Treated for STD",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV653')].OBX-5..*",
+			"label": "INV653"
+		},
+		{
+			"description": "Injected Drug Use (IDU)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV643')].OBX-5..*",
+			"label": "INV643"
+		},
+		{
+			"description": "Ever had contact with Hepatitis",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV829')].OBX-5..*",
+			"label": "INV829"
+		},
+		{
+			"description": "Contact Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV830')].OBX-5",
+			"label": "INV830"
+		},
+		{
+			"description": "Contact Type Indicator",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV828')].OBX-5",
+			"label": "INV828"
+		},
+		{
+			"description": "Household member (non-sexual)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC300')].OBX-5..*",
+			"label": "PHC300"
+		},
+		{
+			"description": "Sexual partners",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '225517006')].OBX-5..*",
+			"label": "225517006"
+		},
+		{
+			"description": "Other Contact Type ",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC1304')].OBX-5..*",
+			"label": "PHC1304"
+		},
+		{
+			"description": "Specify Other Contact Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV897')].OBX-5",
+			"label": "INV897"
+		},
+		{
+			"description": "Long-Term Hemodialysis",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV644')].OBX-5..*",
+			"label": "INV644"
+		},
+		{
+			"description": "Transfusion before 1992",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV645')].OBX-5..*",
+			"label": "INV645"
+		},
+		{
+			"description": "Transplant before 1992",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV646')].OBX-5..*",
+			"label": "INV646"
+		},
+		{
+			"description": "Clotting Factor before 1987",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV647')].OBX-5..*",
+			"label": "INV647"
+		},
+		{
+			"description": "Ever a Medical/ Dental Blood Worker",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV648')].OBX-5..*",
+			"label": "INV648"
+		},
+		{
+			"description": "Ever Incarcerated",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV649')].OBX-5..*",
+			"label": "INV649"
+		},
+		{
+			"description": "Received Medication for condition",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV652')].OBX-5..*",
+			"label": "INV652"
+		},
+		{
+			"description": "Sending Application",
+			"jsonPath": "$..MSH-3..*",
+			"label": "MSH-3"
+		},
+		{
+			"description": "Sending Facility",
+			"jsonPath": "$..MSH-4..*",
+			"label": "MSH-4"
+		},
+		{
+			"description": "Receiving Application",
+			"jsonPath": "$..MSH-5..*",
+			"label": "MSH-5"
+		},
+		{
+			"description": "Receiving Facility",
+			"jsonPath": "$..MSH-6..*",
+			"label": "MSH-6"
+		},
+		{
+			"description": "Date/Time of Message",
+			"jsonPath": "$..MSH-7..*",
+			"label": "MSH-7"
+		},
+		{
+			"description": "Message Control ID",
+			"jsonPath": "$..MSH-10",
+			"label": "MSH-10"
+		}
+	]
+}
