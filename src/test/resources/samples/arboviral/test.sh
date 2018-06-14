@@ -1,0 +1,19 @@
+curl -OJX POST \
+	-Ffile=@json/01.json \
+	-Ffile=@json/03.json \
+	-Ffile=@json/02.json \
+	-Ffile=@json/05.json \
+	-Ffile=@json/04.json \
+	-Ffile=@json/07.json \
+	-Ffile=@json/06.json \
+	-Ffile=@json/09.json \
+	-Ffile=@json/08.json \
+	-Ffile=@json/11.json \
+	-Ffile=@json/10.json \
+	-Ffile=@json/13.json \
+	-Ffile=@json/12.json \
+	-Ffile=@json/15.json \
+	-Ffile=@json/14.json \
+	-Ffile=@json/17.json \
+	-Ffile=@json/16.json \
+	"http://localhost:8085/api/1.0/xlsx/mmg-arboviral?includeHeader=true"

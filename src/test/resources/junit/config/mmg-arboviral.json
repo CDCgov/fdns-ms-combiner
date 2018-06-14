@@ -1,0 +1,688 @@
+{
+	"file": {
+		"date-format": "YYYYMMddHHmmss",
+		"template": "Arboviral_$DATE$"
+	},
+	"rows": [
+		{
+			"description": "Notification ID",
+			"jsonPath": "$..MSH-10",
+			"label": "NOT108"
+		},
+		{
+			"description": "Receiving Application",
+			"jsonPath": "$..MSH-5..*",
+			"label": "NOT114"
+		},
+		{
+			"description": "Message Profile Identifier",
+			"jsonPath": "$..MSH-21..*..*",
+			"label": "NOT115"
+		},
+		{
+			"description": "Patient name type",
+			"jsonPath": "$..PID-5..*",
+			"label": "DEM100"
+		},
+		{
+			"description": "Subject Type",
+			"jsonPath": "$..OBR[?(@.OBR-1 == '1')].OBR-4..*",
+			"label": "NOT099"
+		},
+		{
+			"description": "Notification Type",
+			"jsonPath": "$..OBR[?(@.OBR-1 == '2')].OBR-4..*",
+			"label": "NOT101"
+		},
+		{
+			"description": "Reporting State",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'NOT109')].OBX-5..*",
+			"label": "NOT109"
+		},
+		{
+			"description": "National Reporting Jurisdiction",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'NOT116')].OBX-5..*",
+			"label": "NOT116"
+		},
+		{
+			"description": "Publish Flag",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB011')].OBX-5..*",
+			"label": "ARB011"
+		},
+		{
+			"description": "Local Subject ID",
+			"jsonPath": "$..PID-3.CX-1",
+			"label": "DEM197"
+		},
+		{
+			"description": "Birth Date",
+			"jsonPath": "$..PID-7.TS-1",
+			"label": "DEM115"
+		},
+		{
+			"description": "Subject's Sex",
+			"jsonPath": "$..PID-8",
+			"label": "DEM113"
+		},
+		{
+			"description": "Country of Birth",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'DEM126')].OBX-5..*",
+			"label": "DEM126"
+		},
+		{
+			"description": "Country of Usual Residence",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV501')].OBX-5..*",
+			"label": "INV501"
+		},
+		{
+			"description": "Subject Address State",
+			"jsonPath": "$..PID-11.XAD-4",
+			"label": "DEM162"
+		},
+		{
+			"description": "Subject Address County",
+			"jsonPath": "$..PID-11.XAD-9",
+			"label": "DEM165"
+		},
+		{
+			"description": "Subject Address ZIP Code",
+			"jsonPath": "$..PID-11.XAD-5",
+			"label": "DEM163"
+		},
+		{
+			"description": "Race Category",
+			"jsonPath": "$..PID-10.CE-1",
+			"label": "DEM152"
+		},
+		{
+			"description": "Ethnic Group",
+			"jsonPath": "$..PID-22.CE-1",
+			"label": "DEM155"
+		},
+		{
+			"description": "Condition Code",
+			"jsonPath": "$..OBR[?(@.OBR-1 == '1')].OBR-31.CE-1",
+			"label": "INV169"
+		},
+		{
+			"description": "Arbovirus",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB001')].OBX-5..*",
+			"label": "ARB001"
+		},
+		{
+			"description": "Case Class Status Code",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV163')].OBX-5..*",
+			"label": "INV163"
+		},
+		{
+			"description": "State Case Identifier",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV173')].OBX-5",
+			"label": "INV173"
+		},
+		{
+			"description": "Mother-Infant Case ID Linkage",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV908')].OBX-5",
+			"label": "INV908"
+		},
+		{
+			"description": "Local record ID",
+			"jsonPath": "$..OBR[?(@.OBR-1 == '1')].OBR-3.EI-1",
+			"label": "INV168"
+		},
+		{
+			"description": "Age at Case Investigation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV2001')].OBX-5.SN-2",
+			"label": "INV2001"
+		},
+		{
+			"description": "Age Unit at Case Investigation",
+			"jsonPath": "$..OBX-6.CE-1",
+			"label": "INV2002"
+		},
+		{
+			"description": "Date First Electronically Submitted",
+			"jsonPath": "$..OBR[?(@.OBR-1 == '1')].OBR-7.TS-1",
+			"label": "NOT103"
+		},
+		{
+			"description": "Date of Electronic Case Notification to CDC",
+			"jsonPath": "$..OBR[?(@.OBR-1 == '1')].OBR-22.TS-1",
+			"label": "NOT106"
+		},
+		{
+			"description": "MMWR Week",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV165')].OBX-5.SN-2",
+			"label": "INV165"
+		},
+		{
+			"description": "MMWR Year",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV166')].OBX-5.TS-1",
+			"label": "INV166"
+		},
+		{
+			"description": "Case Disease Imported Code",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV152')].OBX-5..*",
+			"label": "INV152"
+		},
+		{
+			"description": "Imported Country",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV153')].OBX-5..*",
+			"label": "INV153"
+		},
+		{
+			"description": "Imported State",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV154')].OBX-5..*",
+			"label": "INV154"
+		},
+		{
+			"description": "Binational Reporting Criteria",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77988-4')].OBX-5..*",
+			"label": "77988-4"
+		},
+		{
+			"description": "Hospitalized",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV128')].OBX-5..*",
+			"label": "INV128"
+		},
+		{
+			"description": "Date of Illness Onset",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV137')].OBX-5.TS-1",
+			"label": "INV137"
+		},
+		{
+			"description": "Subject Died",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV145')].OBX-5..*",
+			"label": "INV145"
+		},
+		{
+			"description": "Deceased Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV146')].OBX-5.TS-1",
+			"label": "INV146"
+		},
+		{
+			"description": "Pregnancy Status",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV178')].OBX-5..*",
+			"label": "INV178"
+		},
+		{
+			"description": "Mother's Last Menstrual Period Before Delivery",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '75203-0')].OBX-5.TS-1",
+			"label": "75203-0"
+		},
+		{
+			"description": "Clinical Syndrome",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB002')].OBX-5..*",
+			"label": "ARB002"
+		},
+		{
+			"description": "Clinical Syndrome, Secondary",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB050')].OBX-5..*",
+			"label": "ARB050"
+		},
+		{
+			"description": "Fever",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '386661006')].OBX-5..*",
+			"label": "386661006"
+		},
+		{
+			"description": "Chills or Rigors",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '43724002')].OBX-5..*",
+			"label": "43724002"
+		},
+		{
+			"description": "Fatigue or Malaise",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '271795006')].OBX-5..*",
+			"label": "271795006"
+		},
+		{
+			"description": "Rash",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '271807003')].OBX-5..*",
+			"label": "271807003"
+		},
+		{
+			"description": "Myalgia",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '68962001')].OBX-5..*",
+			"label": "68962001"
+		},
+		{
+			"description": "Arthralgia",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '57676002')].OBX-5..*",
+			"label": "57676002"
+		},
+		{
+			"description": "Arthritis",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '3723001')].OBX-5..*",
+			"label": "3723001"
+		},
+		{
+			"description": "Headache",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '25064002')].OBX-5..*",
+			"label": "25064002"
+		},
+		{
+			"description": "Paralysis or Paresis",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '44695005')].OBX-5..*",
+			"label": "44695005"
+		},
+		{
+			"description": "Stiff Neck",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '161882006')].OBX-5..*",
+			"label": "161882006"
+		},
+		{
+			"description": "Ataxia",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '20262006')].OBX-5..*",
+			"label": "20262006"
+		},
+		{
+			"description": "Parkinsonism or Cogwheel Rigidity",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '32798002')].OBX-5..*",
+			"label": "32798002"
+		},
+		{
+			"description": "Altered Mental Status",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '419284004')].OBX-5..*",
+			"label": "419284004"
+		},
+		{
+			"description": "Seizures",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '91175000')].OBX-5..*",
+			"label": "91175000"
+		},
+		{
+			"description": "Conjunctivitis",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '9826008')].OBX-5..*",
+			"label": "9826008"
+		},
+		{
+			"description": "Retro-orbital Pain",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC1400')].OBX-5..*",
+			"label": "PHC1400"
+		},
+		{
+			"description": "Nausea or Vomiting",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '16932000')].OBX-5..*",
+			"label": "16932000"
+		},
+		{
+			"description": "Diarrhea",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '62315008')].OBX-5..*",
+			"label": "62315008"
+		},
+		{
+			"description": "Abdominal Pain or Tenderness",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '21522001')].OBX-5..*",
+			"label": "21522001"
+		},
+		{
+			"description": "Persistent Vomiting",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '196746003')].OBX-5..*",
+			"label": "196746003"
+		},
+		{
+			"description": "Liver Enlargement (Hepatomegaly)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '80515008')].OBX-5..*",
+			"label": "80515008"
+		},
+		{
+			"description": "Extravascular Fluid Accumulation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC1401')].OBX-5..*",
+			"label": "PHC1401"
+		},
+		{
+			"description": "Mucosal Bleeding",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC1402')].OBX-5..*",
+			"label": "PHC1402"
+		},
+		{
+			"description": "Severe Plasma Leakage",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC1403')].OBX-5..*",
+			"label": "PHC1403"
+		},
+		{
+			"description": "Severe Bleeding",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC1404')].OBX-5..*",
+			"label": "PHC1404"
+		},
+		{
+			"description": "Severe Organ Involvement",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC1405')].OBX-5..*",
+			"label": "PHC1405"
+		},
+		{
+			"description": "Oral Ulcer",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '26284000')].OBX-5..*",
+			"label": "26284000"
+		},
+		{
+			"description": "Other Symptoms (Specify)",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '56831-1')].OBX-5",
+			"label": "56831-1"
+		},
+		{
+			"description": "Tourniquet Test Positive",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '42106004')].OBX-5..*",
+			"label": "42106004"
+		},
+		{
+			"description": "Increasing Hematocrit and Decreased Platelet",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'PHC1456')].OBX-5..*",
+			"label": "PHC1456"
+		},
+		{
+			"description": "Leukopenia",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '419188005')].OBX-5..*",
+			"label": "419188005"
+		},
+		{
+			"description": "Pregnancy Complications",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV909')].OBX-5..*",
+			"label": "INV909"
+		},
+		{
+			"description": "Pregnancy Outcome",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '63893-2')].OBX-5..*",
+			"label": "63893-2"
+		},
+		{
+			"description": "Newborn Complications",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '32416-0')].OBX-5..*",
+			"label": "32416-0"
+		},
+		{
+			"description": "Test Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV290' && @.OBX-4 == '1')].OBX-5..*",
+			"label": "INV290/1"
+		},
+		{
+			"description": "Test Result / Interpretation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV291' && @.OBX-4 == '1')].OBX-5..*",
+			"label": "INV291/1"
+		},
+		{
+			"description": "Specimen Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '66746-9' && @.OBX-4 == '1')].OBX-5..*",
+			"label": "66746-9/1"
+		},
+		{
+			"description": "Specimen Collection Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '33882-2' && @.OBX-4 == '1')].OBX-5.TS-1",
+			"label": "33882-2/1"
+		},
+		{
+			"description": "Performing Lab Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB606' && @.OBX-4 == '1')].OBX-5..*",
+			"label": "LAB606/1"
+		},
+		{
+			"description": "Test Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV290' && @.OBX-4 == '2')].OBX-5..*",
+			"label": "INV290/2"
+		},
+		{
+			"description": "Test Result / Interpretation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV291' && @.OBX-4 == '2')].OBX-5..*",
+			"label": "INV291/2"
+		},
+		{
+			"description": "Specimen Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '66746-9' && @.OBX-4 == '2')].OBX-5..*",
+			"label": "66746-9/2"
+		},
+		{
+			"description": "Specimen Collection Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '33882-2' && @.OBX-4 == '2')].OBX-5.TS-1",
+			"label": "33882-2/2"
+		},
+		{
+			"description": "Performing Lab Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB606' && @.OBX-4 == '2')].OBX-5..*",
+			"label": "LAB606/2"
+		},
+		{
+			"description": "Test Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV290' && @.OBX-4 == '3')].OBX-5..*",
+			"label": "INV290/3"
+		},
+		{
+			"description": "Test Result / Interpretation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV291' && @.OBX-4 == '3')].OBX-5..*",
+			"label": "INV291/3"
+		},
+		{
+			"description": "Specimen Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '66746-9' && @.OBX-4 == '3')].OBX-5..*",
+			"label": "66746-9/3"
+		},
+		{
+			"description": "Specimen Collection Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '33882-2' && @.OBX-4 == '3')].OBX-5.TS-1",
+			"label": "33882-2/3"
+		},
+		{
+			"description": "Performing Lab Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB606' && @.OBX-4 == '3')].OBX-5..*",
+			"label": "LAB606/3"
+		},
+		{
+			"description": "Test Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV290' && @.OBX-4 == '4')].OBX-5..*",
+			"label": "INV290/4"
+		},
+		{
+			"description": "Test Result / Interpretation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV291' && @.OBX-4 == '4')].OBX-5..*",
+			"label": "INV291/4"
+		},
+		{
+			"description": "Specimen Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '66746-9' && @.OBX-4 == '4')].OBX-5..*",
+			"label": "66746-9/4"
+		},
+		{
+			"description": "Specimen Collection Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '33882-2' && @.OBX-4 == '4')].OBX-5.TS-1",
+			"label": "33882-2/4"
+		},
+		{
+			"description": "Performing Lab Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB606' && @.OBX-4 == '4')].OBX-5..*",
+			"label": "LAB606/4"
+		},
+		{
+			"description": "Test Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV290' && @.OBX-4 == '5')].OBX-5..*",
+			"label": "INV290/5"
+		},
+		{
+			"description": "Test Result / Interpretation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV291' && @.OBX-4 == '5')].OBX-5..*",
+			"label": "INV291/5"
+		},
+		{
+			"description": "Specimen Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '66746-9' && @.OBX-4 == '5')].OBX-5..*",
+			"label": "66746-9/5"
+		},
+		{
+			"description": "Specimen Collection Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '33882-2' && @.OBX-4 == '5')].OBX-5.TS-1",
+			"label": "33882-2/5"
+		},
+		{
+			"description": "Performing Lab Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB606' && @.OBX-4 == '5')].OBX-5..*",
+			"label": "LAB606/5"
+		},
+		{
+			"description": "Test Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV290' && @.OBX-4 == '6')].OBX-5..*",
+			"label": "INV290/6"
+		},
+		{
+			"description": "Test Result / Interpretation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV291' && @.OBX-4 == '6')].OBX-5..*",
+			"label": "INV291/6"
+		},
+		{
+			"description": "Specimen Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '66746-9' && @.OBX-4 == '6')].OBX-5..*",
+			"label": "66746-9/6"
+		},
+		{
+			"description": "Specimen Collection Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '33882-2' && @.OBX-4 == '6')].OBX-5.TS-1",
+			"label": "33882-2/6"
+		},
+		{
+			"description": "Performing Lab Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB606' && @.OBX-4 == '6')].OBX-5..*",
+			"label": "LAB606/6"
+		},
+		{
+			"description": "Test Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV290' && @.OBX-4 == '7')].OBX-5..*",
+			"label": "INV290/7"
+		},
+		{
+			"description": "Test Result / Interpretation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV291' && @.OBX-4 == '7')].OBX-5..*",
+			"label": "INV291/7"
+		},
+		{
+			"description": "Specimen Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '66746-9' && @.OBX-4 == '7')].OBX-5..*",
+			"label": "66746-9/7"
+		},
+		{
+			"description": "Specimen Collection Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '33882-2' && @.OBX-4 == '7')].OBX-5.TS-1",
+			"label": "33882-2/7"
+		},
+		{
+			"description": "Performing Lab Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB606' && @.OBX-4 == '7')].OBX-5..*",
+			"label": "LAB606/7"
+		},
+		{
+			"description": "Test Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV290' && @.OBX-4 == '8')].OBX-5..*",
+			"label": "INV290/8"
+		},
+		{
+			"description": "Test Result / Interpretation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV291' && @.OBX-4 == '8')].OBX-5..*",
+			"label": "INV291/8"
+		},
+		{
+			"description": "Specimen Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '66746-9' && @.OBX-4 == '8')].OBX-5..*",
+			"label": "66746-9/8"
+		},
+		{
+			"description": "Specimen Collection Date",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '33882-2' && @.OBX-4 == '8')].OBX-5.TS-1",
+			"label": "33882-2/8"
+		},
+		{
+			"description": "Performing Lab Type",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB606' && @.OBX-4 == '8')].OBX-5..*",
+			"label": "LAB606/8"
+		},
+		{
+			"description": "Serotype",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '40440-0')].OBX-5..*",
+			"label": "40440-0"
+		},
+		{
+			"description": "Serum Paired Antibody Test Interpretation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'LAB617')].OBX-5..*",
+			"label": "LAB617"
+		},
+		{
+			"description": "Cerebrospinal Fluid Pleocytosis",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '91454002')].OBX-5..*",
+			"label": "91454002"
+		},
+		{
+			"description": "Lab Acquired",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB003')].OBX-5..*",
+			"label": "ARB003"
+		},
+		{
+			"description": "Blood Donor",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB005')].OBX-5..*",
+			"label": "ARB005"
+		},
+		{
+			"description": "Date Of Blood Donation",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB014')].OBX-5..*",
+			"label": "ARB014"
+		},
+		{
+			"description": "Identified By Blood Donor Screening",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB013')].OBX-5..*",
+			"label": "ARB013"
+		},
+		{
+			"description": "Blood Transfusion",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB006')].OBX-5..*",
+			"label": "ARB006"
+		},
+		{
+			"description": "Organ Donor",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB007')].OBX-5..*",
+			"label": "ARB007"
+		},
+		{
+			"description": "Organ Transplant",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB008')].OBX-5..*",
+			"label": "ARB008"
+		},
+		{
+			"description": "Breast Fed Infant",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB009')].OBX-5..*",
+			"label": "ARB009"
+		},
+		{
+			"description": "Other Arboviral Disease Transmission Mode",
+			"jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'ARB051')].OBX-5..*",
+			"label": "ARB051"
+		},
+		{
+			"description": "Notification Result Status",
+			"jsonPath": "$..OBR-25",
+			"label": "OBR-25"
+		},
+		{
+			"description": "Sending Application",
+			"jsonPath": "$..MSH-3..*",
+			"label": "MSH-3"
+		},
+		{
+			"description": "Sending Facility",
+			"jsonPath": "$..MSH-4..*",
+			"label": "MSH-4"
+		},
+		{
+			"description": "Receiving Application",
+			"jsonPath": "$..MSH-5..*",
+			"label": "MSH-5"
+		},
+		{
+			"description": "Receiving Facility",
+			"jsonPath": "$..MSH-6..*",
+			"label": "MSH-6"
+		},
+		{
+			"description": "Date/Time of Message",
+			"jsonPath": "$..MSH-7..*",
+			"label": "MSH-7"
+		},
+		{
+			"description": "Message Control ID",
+			"jsonPath": "$..MSH-10",
+			"label": "MSH-10"
+		}
+	]
+}

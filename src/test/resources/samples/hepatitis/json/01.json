@@ -1,0 +1,1755 @@
+{
+  "PII": {
+    "checked": false
+  },
+  "extractor": {
+    "version": "0.0.10",
+    "hash": "ba282e893ce91a07da4b6255a4749c9e",
+    "timestamp": 1522177249068
+  },
+  "message": {
+    "HL7": {
+      "source": {
+        "ORU_R01": {
+          "MSH": {
+            "MSH-2": "^~\\&",
+            "MSH-1": "|",
+            "MSH-6": {
+              "HD-2": "2.16.840.1.114222",
+              "HD-1": "PHIN",
+              "HD-3": "ISO"
+            },
+            "MSH-5": {
+              "HD-2": "2.16.840.1.114222.4.3.2.10",
+              "HD-1": "PHINCDS",
+              "HD-3": "ISO"
+            },
+            "MSH-4": {
+              "HD-2": "2.16.840.1.114222.nnnn",
+              "HD-1": "Sending-Facility",
+              "HD-3": "ISO"
+            },
+            "MSH-3": {
+              "HD-2": "2.16.840.1.114222.nnnn",
+              "HD-1": "SendAppName",
+              "HD-3": "ISO"
+            },
+            "MSH-9": {
+              "MSG-3": "ORU_R01",
+              "MSG-2": "R01",
+              "MSG-1": "ORU"
+            },
+            "MSH-7": {
+              "TS-1": "20141225120030.1234-0500"
+            },
+            "MSH-10": "Hepatitis_V1_0_TM_TC01",
+            "MSH-21": [
+              {
+                "EI-1": "NOTF_ORU_v3.0",
+                "EI-2": "PHINProfileID",
+                "EI-3": "2.16.840.1.114222.4.10.3",
+                "EI-4": "ISO"
+              },
+              {
+                "EI-1": "Generic_MMG_V2.0",
+                "EI-2": "PHINMsgMapID",
+                "EI-3": "2.16.840.1.114222.4.10.4",
+                "EI-4": "ISO"
+              },
+              {
+                "EI-1": "Hepatitis_MMG_V1.0",
+                "EI-2": "PHINMsgMapID",
+                "EI-3": "2.16.840.1.114222.4.10.4",
+                "EI-4": "ISO"
+              }
+            ],
+            "MSH-11": {
+              "PT-1": "T"
+            },
+            "MSH-12": {
+              "VID-1": "2.5.1"
+            }
+          },
+          "ORU_R01-PATIENT_RESULT": {
+            "ORU_R01-ORDER_OBSERVATION": [
+              {
+                "ORU_R01-OBSERVATION": [
+                  {
+                    "OBX": {
+                      "OBX-1": "1",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Country of Birth",
+                        "CE-1": "78746-5"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "USA",
+                        "CWE-2": "United States",
+                        "CWE-3": "ISO3166_1"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "2",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Country of Usual Residence",
+                        "CE-1": "77983-5"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "USA",
+                        "CWE-2": "United States",
+                        "CWE-3": "ISO3166_1"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "3",
+                      "OBX-11": "F",
+                      "OBX-2": "TS",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Date of Illness Onset",
+                        "CE-1": "11368-8"
+                      },
+                      "OBX-5": {
+                        "TS-1": "20140224"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "4",
+                      "OBX-11": "F",
+                      "OBX-2": "TS",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Illness End Date",
+                        "CE-1": "77976-9"
+                      },
+                      "OBX-5": {
+                        "TS-1": "20140302"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "5",
+                      "OBX-11": "F",
+                      "OBX-2": "SN",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Illness Duration",
+                        "CE-1": "77977-7"
+                      },
+                      "OBX-5": {
+                        "SN-2": "6"
+                      },
+                      "OBX-6": {
+                        "CE-3": "UCUM",
+                        "CE-2": "day",
+                        "CE-1": "d"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "6",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Pregnancy Status",
+                        "CE-1": "77996-7"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "N",
+                        "CWE-2": "No",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "7",
+                      "OBX-11": "F",
+                      "OBX-2": "TS",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Diagnosis Date",
+                        "CE-1": "77975-1"
+                      },
+                      "OBX-5": {
+                        "TS-1": "20140225"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "8",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Hospitalized",
+                        "CE-1": "77974-4"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "Y",
+                        "CWE-2": "Yes",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "9",
+                      "OBX-11": "F",
+                      "OBX-2": "TS",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Admission Date",
+                        "CE-1": "8656-1"
+                      },
+                      "OBX-5": {
+                        "TS-1": "20140226"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "10",
+                      "OBX-11": "F",
+                      "OBX-2": "TS",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Discharge Date",
+                        "CE-1": "8649-6"
+                      },
+                      "OBX-5": {
+                        "TS-1": "20140302"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "11",
+                      "OBX-11": "F",
+                      "OBX-2": "SN",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Duration of Hospital Stay in days",
+                        "CE-1": "78033-8"
+                      },
+                      "OBX-5": {
+                        "SN-2": "4"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "12",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Subject Died",
+                        "CE-1": "77978-5"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "Y",
+                        "CWE-2": "Yes",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "13",
+                      "OBX-11": "F",
+                      "OBX-2": "ST",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "State Case Id",
+                        "CE-1": "77993-4"
+                      },
+                      "OBX-5": "340227"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "14",
+                      "OBX-11": "F",
+                      "OBX-2": "ST",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Legacy Case ID",
+                        "CE-1": "77997-5"
+                      },
+                      "OBX-5": "34022748S012014"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "15",
+                      "OBX-11": "F",
+                      "OBX-2": "SN",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Age at Case Investigation",
+                        "CE-1": "77998-3"
+                      },
+                      "OBX-5": {
+                        "SN-2": "49"
+                      },
+                      "OBX-6": {
+                        "CE-3": "UCUM",
+                        "CE-2": "year",
+                        "CE-1": "a"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "16",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Case Disease Imported Code",
+                        "CE-1": "77982-7"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "PHC244",
+                        "CWE-2": "Indigenous, within jurisdiction",
+                        "CWE-3": "CDCPHINVS"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "17",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Country of Exposure",
+                        "CE-1": "77984-3"
+                      },
+                      "OBX-4": "1",
+                      "OBX-5": {
+                        "CWE-1": "USA",
+                        "CWE-2": "United States",
+                        "CWE-3": "ISO3166_1"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "18",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "State or Province of Exposure",
+                        "CE-1": "77985-0"
+                      },
+                      "OBX-4": "1",
+                      "OBX-5": {
+                        "CWE-1": "48",
+                        "CWE-2": "Texas",
+                        "CWE-3": "FIPS5_2"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "19",
+                      "OBX-11": "F",
+                      "OBX-2": "ST",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "City of Exposure",
+                        "CE-1": "77986-8"
+                      },
+                      "OBX-4": "1",
+                      "OBX-5": "Houston"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "20",
+                      "OBX-11": "F",
+                      "OBX-2": "ST",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "County of Exposure",
+                        "CE-1": "77987-6"
+                      },
+                      "OBX-4": "1",
+                      "OBX-5": "Harris"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "21",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Transmission Mode",
+                        "CE-1": "77989-2"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "416086007",
+                        "CWE-2": "Foodborne Transmission",
+                        "CWE-3": "SCT"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "22",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Case Class Status Code",
+                        "CE-1": "77990-0"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "410605003",
+                        "CWE-2": "Confirmed Present",
+                        "CWE-3": "SCT"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "23",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Immediate National Notifiable Condition",
+                        "CE-1": "77965-2"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "N",
+                        "CWE-2": "No",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "24",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Case Outbreak Indicator",
+                        "CE-1": "77980-1"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "Y",
+                        "CWE-2": "Yes",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "25",
+                      "OBX-11": "F",
+                      "OBX-2": "ST",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Case Outbreak Name",
+                        "CE-1": "77981-9"
+                      },
+                      "OBX-5": "HEPAOUTB1"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "26",
+                      "OBX-11": "F",
+                      "OBX-2": "ST",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Jurisdiction Code",
+                        "CE-1": "77969-4"
+                      },
+                      "OBX-5": "S01"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "27",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Reporting Source Type Code",
+                        "CE-1": "48766-0"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "1",
+                        "CWE-2": "Hospital",
+                        "CWE-3": "HL70406"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "28",
+                      "OBX-11": "F",
+                      "OBX-2": "ST",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Reporting Source Zip Code",
+                        "CE-1": "52831-5"
+                      },
+                      "OBX-5": "77018"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "29",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Binational Reporting Criteria",
+                        "CE-1": "77988-4"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "PHC1140",
+                        "CWE-2": "Exposure to suspected product from Canada or Mexico",
+                        "CWE-3": "CDCPHINVS"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "30",
+                      "OBX-11": "F",
+                      "OBX-2": "ST",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Person Reporting to CDC - Name",
+                        "CE-1": "74549-7"
+                      },
+                      "OBX-5": "Smith, John"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "31",
+                      "OBX-11": "F",
+                      "OBX-2": "ST",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Person Reporting to CDC - Phone Number",
+                        "CE-1": "74548-9"
+                      },
+                      "OBX-5": "(722)277-4477"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "32",
+                      "OBX-11": "F",
+                      "OBX-2": "ST",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Person Reporting to CDC - Email",
+                        "CE-1": "74547-1"
+                      },
+                      "OBX-5": "Smith@you.com"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "33",
+                      "OBX-11": "F",
+                      "OBX-2": "DT",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Case Investigation Start Date",
+                        "CE-1": "77979-3"
+                      },
+                      "OBX-5": "20140225"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "34",
+                      "OBX-11": "F",
+                      "OBX-2": "DT",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Date Reported",
+                        "CE-1": "77995-9"
+                      },
+                      "OBX-5": "20140225"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "35",
+                      "OBX-11": "F",
+                      "OBX-2": "TS",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Earliest Date reported to county",
+                        "CE-1": "77972-8"
+                      },
+                      "OBX-5": {
+                        "TS-1": "20140225"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "36",
+                      "OBX-11": "F",
+                      "OBX-2": "TS",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Earliest Date reported to State",
+                        "CE-1": "77973-6"
+                      },
+                      "OBX-5": {
+                        "TS-1": "20140225"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "37",
+                      "OBX-11": "F",
+                      "OBX-2": "SN",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "MMWR Week",
+                        "CE-1": "77991-8"
+                      },
+                      "OBX-5": {
+                        "SN-2": "9"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "38",
+                      "OBX-11": "F",
+                      "OBX-2": "DT",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "MMWR Year",
+                        "CE-1": "77992-6"
+                      },
+                      "OBX-5": "2014"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "39",
+                      "OBX-11": "F",
+                      "OBX-2": "DT",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Date CDC Was First Verbally Notified of This Case",
+                        "CE-1": "77994-2"
+                      },
+                      "OBX-5": "20140225"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "40",
+                      "OBX-11": "F",
+                      "OBX-2": "DT",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Date First Reported to PHD",
+                        "CE-1": "77970-2"
+                      },
+                      "OBX-5": "20140225"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "41",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Reporting State",
+                        "CE-1": "77966-0"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "48",
+                        "CWE-2": "Texas",
+                        "CWE-3": "FIPS5_2"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "42",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Reporting County",
+                        "CE-1": "77967-8"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "48201",
+                        "CWE-2": "Harris",
+                        "CWE-3": "FIPS6_4"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "43",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "National Reporting Jurisdiction",
+                        "CE-1": "77968-6"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "48",
+                        "CWE-2": "Texas",
+                        "CWE-3": "FIPS5_2"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "44",
+                      "OBX-11": "F",
+                      "OBX-2": "TX",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Comment Field",
+                        "CE-1": "77999-1"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "45",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "Reason for Testing",
+                        "CE-1": "67098-4"
+                      },
+                      "OBX-5": [
+                        {
+                          "CWE-1": "PHC307",
+                          "CWE-2": "Symptoms of Acute Hepatitis",
+                          "CWE-3": "CDCPHINVS"
+                        },
+                        {
+                          "CWE-1": "PHC309",
+                          "CWE-2": "Evaluation of elevated liver enzymes",
+                          "CWE-3": "CDCPHINVS"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "46",
+                      "OBX-11": "F",
+                      "OBX-2": "ST",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Other Reason for Testing",
+                        "CE-1": "INV901"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "47",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Symptomatic",
+                        "CE-1": "INV576"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "Y",
+                        "CWE-2": "Yes",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "48",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Jaundiced(Symptom)",
+                        "CE-1": "INV578"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "Y",
+                        "CWE-2": "Yes",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "49",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Previously Aware of Condition",
+                        "CE-1": "INV650"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "50",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Provider of Care for Condition",
+                        "CE-1": "INV651"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "Y",
+                        "CWE-2": "Yes",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "51",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Diabetes",
+                        "CE-1": "INV887"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "52",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "IgM anti-HAV",
+                        "CE-1": "LP38318-9"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "10828004",
+                        "CWE-2": "Positive",
+                        "CWE-3": "SCT"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "53",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "total anti-HBc",
+                        "CE-1": "LP38323-9"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "260385009",
+                        "CWE-2": "Negative",
+                        "CWE-3": "SCT"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "54",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "IgM anti-HBc",
+                        "CE-1": "LP38325-4"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "260385009",
+                        "CWE-2": "Negative",
+                        "CWE-3": "SCT"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "55",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "HEP B Nucleic Acid Test (NAT)",
+                        "CE-1": "LP38320-5"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "56",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "HBeAg",
+                        "CE-1": "LP38329-6"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "260385009",
+                        "CWE-2": "Negative",
+                        "CWE-3": "SCT"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "57",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "HBsAg",
+                        "CE-1": "LP38331-2"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "260385009",
+                        "CWE-2": "Negative",
+                        "CWE-3": "SCT"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "58",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "total anti-HCV",
+                        "CE-1": "LP38332-0"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "260385009",
+                        "CWE-2": "Negative",
+                        "CWE-3": "SCT"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "59",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "total anti-HDV",
+                        "CE-1": "LP38345-2"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "60",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "LN",
+                        "CE-2": "total anti-HEV",
+                        "CE-1": "LP38350-2"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "61",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Epi-linked to another confirmed or probable case",
+                        "CE-1": "INV217"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "62",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Contact With Confirmed or Suspected Case",
+                        "CE-1": "INV602"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "Y",
+                        "CWE-2": "Yes",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "63",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "SCT",
+                        "CE-2": "Babysitter",
+                        "CE-1": "43018001"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "64",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "CDCPHINVS",
+                        "CE-2": "Child cared for by this patient",
+                        "CE-1": "PHC299"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "65",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "CDCPHINVS",
+                        "CE-2": "Playmate",
+                        "CE-1": "PHC301"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "N",
+                        "CWE-2": "No",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "66",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "SCT",
+                        "CE-2": "Sexual partners",
+                        "CE-1": "225517006"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "Y",
+                        "CWE-2": "Yes",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "67",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Child or Employee in the child care facility",
+                        "CE-1": "INV615"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "N",
+                        "CWE-2": "No",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "68",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Household contact of a Child or Employee in the child care facility",
+                        "CE-1": "INV616"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "N",
+                        "CWE-2": "No",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "69",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Identified Hepatitis A case in the child care facility",
+                        "CE-1": "INV896"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "70",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Sexual Preference",
+                        "CE-1": "INV592"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "20430005",
+                        "CWE-2": "Heterosexual",
+                        "CWE-3": "SCT"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "71",
+                      "OBX-11": "F",
+                      "OBX-2": "SN",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Number of Male Sexual Partners",
+                        "CE-1": "INV605"
+                      },
+                      "OBX-5": {
+                        "SN-2": "3"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "72",
+                      "OBX-11": "F",
+                      "OBX-2": "SN",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Number of Female Sexual Partners",
+                        "CE-1": "INV606"
+                      },
+                      "OBX-5": {
+                        "SN-2": "1"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "73",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Inject drugs not prescribed by a doctor",
+                        "CE-1": "INV607"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "74",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Use street drugs but not inject",
+                        "CE-1": "INV608"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "N",
+                        "CWE-2": "No",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "75",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Travel or Live Outside U.S. or Canada",
+                        "CE-1": "TRAVEL30"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "Y",
+                        "CWE-2": "Yes",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "76",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Countries Traveled or Lived Outside U.S. or Canada",
+                        "CE-1": "TRAVEL31"
+                      },
+                      "OBX-5": [
+                        {
+                          "CWE-1": "MDV",
+                          "CWE-2": "Maldives",
+                          "CWE-3": "ISO3166_1"
+                        },
+                        {
+                          "CWE-1": "TWN",
+                          "CWE-2": "Taiwan",
+                          "CWE-3": "ISO3166_1"
+                        },
+                        {
+                          "CWE-1": "YUCS",
+                          "CWE-2": "Yugoslavia",
+                          "CWE-3": "ISO3166_1"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "77",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "What was the principal reason for travel",
+                        "CE-1": "TRAVEL16"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "PHC386",
+                        "CWE-2": "Business",
+                        "CWE-3": "CDCPHINVS"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "78",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Household Travel Outside U.S. or Canada",
+                        "CE-1": "TRAVEL32"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "N",
+                        "CWE-2": "No",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "79",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Common-Source Outbreak",
+                        "CE-1": "INV618"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "N",
+                        "CWE-2": "No",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "80",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Foodborne Outbreak infected food Handler",
+                        "CE-1": "INV609"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "81",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Foodborne Outbreak- Not an infected food Handler",
+                        "CE-1": "INV610"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "82",
+                      "OBX-11": "F",
+                      "OBX-2": "ST",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Food Item of Associated Outbreak",
+                        "CE-1": "INV611"
+                      },
+                      "OBX-5": "UNKNOWN"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "83",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Waterborne Outbreak",
+                        "CE-1": "INV612"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "84",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Unidentified Source Outbreak",
+                        "CE-1": "INV613"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "UNK",
+                        "CWE-2": "Unknown",
+                        "CWE-3": "NULLFL"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "85",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Food Handler",
+                        "CE-1": "INV621"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "Y",
+                        "CWE-2": "Yes",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "86",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Ever Receive a Vaccine",
+                        "CE-1": "VAC126"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "Y",
+                        "CWE-2": "Yes",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "87",
+                      "OBX-11": "F",
+                      "OBX-2": "SN",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Total Doses of Vaccine",
+                        "CE-1": "VAC132"
+                      },
+                      "OBX-5": {
+                        "SN-2": "3"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "88",
+                      "OBX-11": "F",
+                      "OBX-2": "DT",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Date of Last Dose",
+                        "CE-1": "VAC142"
+                      },
+                      "OBX-5": "2010"
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "89",
+                      "OBX-11": "F",
+                      "OBX-2": "CWE",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Ever Receive Immune Globulin",
+                        "CE-1": "VAC143"
+                      },
+                      "OBX-5": {
+                        "CWE-1": "Y",
+                        "CWE-2": "Yes",
+                        "CWE-3": "HL70136"
+                      }
+                    }
+                  },
+                  {
+                    "OBX": {
+                      "OBX-1": "90",
+                      "OBX-11": "F",
+                      "OBX-2": "DT",
+                      "OBX-3": {
+                        "CE-3": "PHINQUESTION",
+                        "CE-2": "Date of Last IG Dose",
+                        "CE-1": "VAC144"
+                      },
+                      "OBX-5": "201205"
+                    }
+                  }
+                ],
+                "OBR": {
+                  "OBR-7": {
+                    "TS-1": "20140227170100"
+                  },
+                  "OBR-25": "F",
+                  "OBR-22": {
+                    "TS-1": "20140227170100"
+                  },
+                  "OBR-31": {
+                    "CE-3": "NND",
+                    "CE-2": "Hepatitis A, acute",
+                    "CE-1": "10110"
+                  },
+                  "OBR-1": "1",
+                  "OBR-2": {
+                    "EI-1": "\"\""
+                  },
+                  "OBR-3": {
+                    "EI-1": "HEP_A_TC01",
+                    "EI-2": "SendAppName",
+                    "EI-3": "2.16.840.1.114222.nnnn",
+                    "EI-4": "ISO"
+                  },
+                  "OBR-4": {
+                    "CE-3": "LN",
+                    "CE-2": "Epidemiologic Information",
+                    "CE-1": "68991-9"
+                  }
+                }
+              },
+              {
+                "ORU_R01-OBSERVATION": {
+                  "OBX": {
+                    "OBX-8": "POS",
+                    "OBX-19": {
+                      "TS-1": "20140226"
+                    },
+                    "OBX-23": {
+                      "XON-2": "L",
+                      "XON-10": "1236",
+                      "XON-1": "GHH Lab",
+                      "XON-7": "XX",
+                      "XON-6": {
+                        "HD-2": "2.16.840.1.113883.19.4.6",
+                        "HD-1": "CLIA",
+                        "HD-3": "ISO"
+                      }
+                    },
+                    "OBX-1": "1",
+                    "OBX-11": "F",
+                    "OBX-2": "CWE",
+                    "OBX-14": {
+                      "TS-1": "20140225"
+                    },
+                    "OBX-25": {
+                      "XCN-1": "9876543",
+                      "XCN-13": "NPI",
+                      "XCN-9": {
+                        "HD-2": "1.3.6.1.4.1.562.2.4.1.43",
+                        "HD-1": "NPI",
+                        "HD-3": "ISO"
+                      }
+                    },
+                    "OBX-3": {
+                      "CE-3": "LN",
+                      "CE-2": "Hepatitis A virus IgM Ab [Presence] in Serum by Immunoassay",
+                      "CE-1": "13950-1"
+                    },
+                    "OBX-5": {
+                      "CWE-1": "10828004",
+                      "CWE-2": "Positive",
+                      "CWE-3": "SCT"
+                    },
+                    "OBX-7": "Negative",
+                    "OBX-17": {
+                      "CE-3": "OBSMETHOD",
+                      "CE-2": "Immunoassay",
+                      "CE-1": "0101"
+                    }
+                  }
+                },
+                "ORU_R01-SPECIMEN": {
+                  "SPM": {
+                    "SPM-4": {
+                      "CWE-1": "119364003",
+                      "CWE-2": "Serum specimen",
+                      "CWE-3": "SCT"
+                    },
+                    "SPM-11": {
+                      "CWE-1": "P",
+                      "CWE-2": "Patient",
+                      "CWE-3": "HL70369"
+                    },
+                    "SPM-2": {
+                      "EIP-1": {
+                        "EI-1": "HEP23456-1",
+                        "EI-2": "EHR",
+                        "EI-3": "2.16.840.1.113883.19.3.2.3",
+                        "EI-4": "ISO"
+                      },
+                      "EIP-2": {
+                        "EI-1": "HEP9700122-1",
+                        "EI-2": "Lab",
+                        "EI-3": "2.16.840.1.113883.19.3.1.6",
+                        "EI-4": "ISO"
+                      }
+                    },
+                    "SPM-12": {
+                      "CQ-2": {
+                        "CE-3": "UCUM",
+                        "CE-2": "milliliter",
+                        "CE-1": "mL"
+                      },
+                      "CQ-1": "2"
+                    },
+                    "SPM-1": "1",
+                    "SPM-18": {
+                      "TS-1": "20140225101500"
+                    },
+                    "SPM-8": {
+                      "CWE-1": "244001006",
+                      "CWE-2": "Antecubital fossa",
+                      "CWE-3": "SCT"
+                    },
+                    "SPM-14": "Serum Sample",
+                    "SPM-17": {
+                      "DR-1": {
+                        "TS-1": "20140225"
+                      }
+                    }
+                  }
+                },
+                "OBR": {
+                  "OBR-7": {
+                    "TS-1": "20140226000000"
+                  },
+                  "OBR-16": {
+                    "XCN-1": "121121121",
+                    "XCN-13": "NPI",
+                    "XCN-14": {
+                      "HD-2": "2.16.840.1.113883.3.72.5.26",
+                      "HD-1": "NPI_Facility",
+                      "HD-3": "ISO"
+                    },
+                    "XCN-10": "L",
+                    "XCN-21": "MD",
+                    "XCN-9": {
+                      "HD-2": "2.16.840.1.113883.4.6",
+                      "HD-1": "NPI",
+                      "HD-3": "ISO"
+                    }
+                  },
+                  "OBR-25": "F",
+                  "OBR-22": {
+                    "TS-1": "20140226"
+                  },
+                  "OBR-31": {
+                    "CE-3": "I10C",
+                    "CE-2": "Inflammatory liver disease, unspecified",
+                    "CE-1": "K759"
+                  },
+                  "OBR-1": "2",
+                  "OBR-2": {
+                    "EI-1": "HEP23456-1",
+                    "EI-2": "EHR",
+                    "EI-3": "2.16.840.1.113883.19.3.2.3",
+                    "EI-4": "ISO"
+                  },
+                  "OBR-3": {
+                    "EI-1": "HEP9700123-1",
+                    "EI-2": "Lab",
+                    "EI-3": "2.16.840.1.113883.19.3.1.6",
+                    "EI-4": "ISO"
+                  },
+                  "OBR-4": {
+                    "CE-3": "LN",
+                    "CE-2": "Hepatitis A virus Ab panel in Serum",
+                    "CE-1": "53775-3"
+                  }
+                }
+              }
+            ],
+            "ORU_R01-PATIENT": {
+              "PID": {
+                "PID-11": {
+                  "XAD-9": "48201",
+                  "XAD-4": "48",
+                  "XAD-5": "77018"
+                },
+                "PID-22": {
+                  "CE-3": "CDCREC",
+                  "CE-2": "Hispanic or Latino",
+                  "CE-1": "2135-2"
+                },
+                "PID-1": "1",
+                "PID-10": {
+                  "CE-3": "CDCREC",
+                  "CE-2": "White",
+                  "CE-1": "2106-3"
+                },
+                "PID-3": {
+                  "CX-4": {
+                    "HD-2": "2.16.840.1.114222.nnnn",
+                    "HD-1": "SendAppName",
+                    "HD-3": "ISO"
+                  },
+                  "CX-1": "HEP_A_TC01"
+                },
+                "PID-5": {
+                  "XPN-7": "S"
+                },
+                "PID-7": {
+                  "TS-1": "19640502"
+                },
+                "PID-29": {
+                  "TS-1": "20140302"
+                },
+                "PID-8": "F"
+              }
+            }
+          }
+        }
+      },
+      "version": {
+        "VID-1": "2.5.1"
+      }
+    },
+    "type": "HL7"
+  }
+}
