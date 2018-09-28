@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/CDCgov/fdns-ms-combiner.svg?branch=master)](https://travis-ci.org/CDCgov/fdns-ms-combiner)
+
 # FDNS Combiner Microservice
 This is the repository with the Combiner service to combine JSON files into a single CSV or XLSX file.
 
