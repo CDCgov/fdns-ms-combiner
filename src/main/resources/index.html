@@ -73,16 +73,16 @@
   --header 'Content-Type: application/json' \
   --header 'Accept: application/json' \
   -d '[JSON CONTENT LISTED ABOVE]' \
-  '<span class='origin'>http://127.0.0.1:8085</span>config/case-id-extractor'</code></pre>
+  '<span class='origin'>http://127.0.0.1:8085</span>api/1.0/config/case-id-extractor'</code></pre>
       <p>You should receive the following confirmation message:</p>
 	    <pre><code>{"success":true,"config":"case-id-extractor"}</code></pre>
 	    <p>You can double check that your config is properly uploaded with the following command:</p>
 	    <button class="btn" data-clipboard-target="#curl-cmd-4">Copy</button>
-	    <pre id="curl-cmd-4"><code>curl '<span class='origin'>http://127.0.0.1:8085</span>config/case-id-extractor'</code></pre>
+	    <pre id="curl-cmd-4"><code>curl '<span class='origin'>http://127.0.0.1:8085</span>api/1.0/config/case-id-extractor'</code></pre>
 	    <p>Now, you can use your configuration to upload JSON objects (representing HL7 messages). Let's assume that you have 3 files in your folder called <code>msg1.json</code>, <code>msg2.json</code> and <code>msg3.json</code>. If you want to apply your config on these files and get a CSV, just call the following command: </p>
 	    <button class="btn" data-clipboard-target="#curl-cmd-2">Copy</button>
 	    <pre id="curl-cmd-2"><code>curl -LOJ -X POST \
-      <span class='origin'>http://127.0.0.1:8085</span>hl7/csv/case-id-extractor \
+      <span class='origin'>http://127.0.0.1:8085</span>api/1.0/hl7/csv/case-id-extractor \
   --header 'Content-Type: multipart/form-data' \
   -Ffile=@msg1.json \
   -Ffile=@msg2.json \
@@ -95,7 +95,7 @@
   	  <p>You can get as well the same file in XLSX format:</p>
       <button class="btn" data-clipboard-target="#curl-cmd-3">Copy</button>
 	    <pre id="curl-cmd-3"><code>curl -LOJ -X POST \
-  <span class='origin'>http://127.0.0.1:8085</span>hl7/xlsx/case-id-extractor \
+  <span class='origin'>http://127.0.0.1:8085</span>api/1.0/hl7/xlsx/case-id-extractor \
   --header 'Content-Type: multipart/form-data' \
   -Ffile=@msg1.json \
   -Ffile=@msg2.json \
