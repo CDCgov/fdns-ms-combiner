@@ -7,6 +7,8 @@ docker-build:
 		--build-arg COMBINER_PORT=8085 \
 		--build-arg COMBINER_FLUENTD_HOST=fluentd \
 		--build-arg COMBINER_FLUENTD_PORT=24224 \
+		--build-arg COMBINER_SEPARATOR_CSV="," \
+		--build-arg COMBINER_SEPARATOR_VALUE=";" \
 		--build-arg OBJECT_URL=http://fdns-ms-object:8083 \
 		--build-arg COMBINER_PROXY_HOSTNAME= \
 		--build-arg OAUTH2_ACCESS_TOKEN_URI= \
