@@ -58,7 +58,7 @@ This microservice is designed to be used with other microservices. Please look a
 
 This microservice is configurable to be secured with an OAuth 2 provider.
 
-__Scopes__: This application uses the following scope: `combiner.*`
+__Scopes__: This application uses the following scope syntax: `fdns.combiner.{config}.{create|read|update|delete}`. Example: `fdns.combiner.myconfig.read`
 
 Please see the following environment variables for configuring with your OAuth 2 provider:
 
