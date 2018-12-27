@@ -76,7 +76,32 @@ Here are other various configurations and their purposes:
 - `COMBINER_FLUENTD_HOST`: This is the host of your [Fluentd](https://www.fluentd.org/)
 - `COMBINER_FLUENTD_PORT`: This is the port of your [Fluentd](https://www.fluentd.org/)
 - `COMBINER_PROXY_HOSTNAME`: This is the hostname of your environment for use with Swagger UI, ex: `api.my.org`
-  
+- `COMBINER_SEPARATOR_VALUE`: This is the value that separates the values in the combined file. You can also pass a `seperator` value in the JSON config for the combiner that changes this value for a specific row (see more below in [#configuration-files](#configuration-files))
+- `COMBINER_SEPARATOR_CSV`: This is the value that is used to separate the fields in the CSV file.
+
+### Configuration Files
+
+The combiner microservice uses JSON to create configuration files for creating a combined file. You can find example files in [test/resources](test/resources).
+
+Here is an example below:
+
+```json
+{
+  "file": {
+    "template": "Example_$DATE$",
+    "date-format": "YYYYMMddHHmmss"
+  },
+  "rows": [
+    {
+      "description": "Message Profile Identifier",
+      "label": "MSH-21",
+      "jsonPath": "$..MSH-21..EI-3",
+      "seperator": ";"
+    }
+  ]
+}
+```
+
 ## Public Domain
 
 This repository constitutes a work of the United States Government and is not

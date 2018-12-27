@@ -37,6 +37,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT, properties = { 
+		"csv.separator=,",
+		"value.separator=;",
 		"logging.fluentd.host=fluentd", 
 		"logging.fluentd.port=24224",
 		"proxy.hostname=localhost",

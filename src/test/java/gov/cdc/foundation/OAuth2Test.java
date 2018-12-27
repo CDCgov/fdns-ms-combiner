@@ -13,7 +13,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT, properties = { 
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT, properties = {
+		"csv.separator=,",
+		"value.separator=;",
 		"logging.fluentd.host=fluentd", 
 		"logging.fluentd.port=24224",
 		"proxy.hostname=localhost",
