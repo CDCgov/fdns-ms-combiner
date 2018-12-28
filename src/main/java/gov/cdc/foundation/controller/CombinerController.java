@@ -71,7 +71,6 @@ public class CombinerController {
 	@ResponseBody
 	public ResponseEntity<?> index() throws IOException {
 		ObjectMapper mapper = new ObjectMapper();
-		
 		Map<String, Object> log = new HashMap<>();
 		
 		try {
@@ -86,29 +85,60 @@ public class CombinerController {
 		}
 	}
 
-
-	@PreAuthorize("!@authz.isSecured() or #oauth2.hasScope('combiner.'.concat(#config)) or #config.startsWith('public-')")
-	@RequestMapping(value = "config/{config}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
-	@ApiOperation(value = "Create or update rules for the specified configuration", notes = "Create or update configuration")
+	@PreAuthorize(
+		"!@authz.isSecured()"
+		+ " or #config.startsWith('public-')"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.create'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.update'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
+		+ " or #oauth2.hasScope('fdns.combiner.*.create')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.update')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
+	)
+	@RequestMapping(
+		value = "config/{config}",
+		method = RequestMethod.PUT,
+		produces = MediaType.APPLICATION_JSON_VALUE
+	)
+	@ApiOperation(
+		value = "Create or update rules for the specified configuration",
+		notes = "Create or update configuration"
+	)
 	@ResponseBody
 	public ResponseEntity<?> upsertConfigWithPut(
-			@ApiIgnore @RequestHeader(value = "Authorization", required = false) String authorizationHeader,
-			@RequestBody(required = true) String payload,
-			@ApiParam(value = "Configuration name") @PathVariable(value = "config") String config) {
+		@ApiIgnore @RequestHeader(value = "Authorization", required = false) String authorizationHeader,
+		@RequestBody(required = true) String payload,
+		@ApiParam(value = "Configuration name") @PathVariable(value = "config") String config
+	) {
 		return upsertConfig(authorizationHeader, payload, config);
 	}
 
-	@PreAuthorize("!@authz.isSecured() or #oauth2.hasScope('combiner.'.concat(#config)) or #config.startsWith('public-')")
-	@RequestMapping(value = "config/{config}", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-	@ApiOperation(value = "Create or update rules for the specified configuration", notes = "Create or update configuration")
+	@PreAuthorize(
+		"!@authz.isSecured()"
+		+ " or #config.startsWith('public-')"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.create'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.update'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
+		+ " or #oauth2.hasScope('fdns.combiner.*.create')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.update')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
+	)
+	@RequestMapping(
+		value = "config/{config}",
+		method = RequestMethod.POST,
+		produces = MediaType.APPLICATION_JSON_VALUE
+	)
+	@ApiOperation(
+		value = "Create or update rules for the specified configuration",
+		notes = "Create or update configuration"
+	)
 	@ResponseBody
 	public ResponseEntity<?> upsertConfig(
-			@ApiIgnore @RequestHeader(value = "Authorization", required = false) String authorizationHeader,
-			@RequestBody(required = true) String payload, 
-			@ApiParam(value = "Configuration name") @PathVariable(value = "config") String config) {
-
+		@ApiIgnore @RequestHeader(value = "Authorization", required = false) String authorizationHeader,
+		@RequestBody(required = true) String payload, 
+		@ApiParam(value = "Configuration name") @PathVariable(value = "config") String config
+	) {
 		ObjectMapper mapper = new ObjectMapper();
-
 		Map<String, Object> log = MessageHelper.initializeLog(MessageHelper.METHOD_UPSERTCONFIG, config);
 
 		try {
@@ -138,16 +168,29 @@ public class CombinerController {
 		}
 	}
 
-	@PreAuthorize("!@authz.isSecured() or #oauth2.hasScope('combiner.'.concat(#config)) or #config.startsWith('public-')")
-	@RequestMapping(value = "config/{config}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	@ApiOperation(value = "Get configuration", notes = "Get configuration")
+	@PreAuthorize(
+		"!@authz.isSecured()"
+		+ " or #config.startsWith('public-')"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.read'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
+		+ " or #oauth2.hasScope('fdns.combiner.*.read')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
+	)
+	@RequestMapping(
+		value = "config/{config}",
+		method = RequestMethod.GET,
+		produces = MediaType.APPLICATION_JSON_VALUE
+	)
+	@ApiOperation(
+		value = "Get configuration",
+		notes = "Get configuration"
+	)
 	@ResponseBody
 	public ResponseEntity<?> getConfig(
-			@ApiIgnore @RequestHeader(value = "Authorization", required = false) String authorizationHeader,
-			@ApiParam(value = "Configuration name") @PathVariable(value = "config") String config) {
-
+		@ApiIgnore @RequestHeader(value = "Authorization", required = false) String authorizationHeader,
+		@ApiParam(value = "Configuration name") @PathVariable(value = "config") String config
+	) {
 		ObjectMapper mapper = new ObjectMapper();
-
 		Map<String, Object> log = MessageHelper.initializeLog(MessageHelper.METHOD_GETCONFIG, config);
 
 		try {
@@ -165,16 +208,28 @@ public class CombinerController {
 
 	}
 
-	@PreAuthorize("!@authz.isSecured() or #oauth2.hasScope('combiner.'.concat(#config)) or #config.startsWith('public-')")
-	@RequestMapping(value = "config/{config}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
-	@ApiOperation(value = "Delete configuration", notes = "Delete configuration")
+	@PreAuthorize(
+		"!@authz.isSecured()"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.delete'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
+		+ " or #oauth2.hasScope('fdns.combiner.*.delete')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
+	)
+	@RequestMapping(
+		value = "config/{config}",
+		method = RequestMethod.DELETE,
+		produces = MediaType.APPLICATION_JSON_VALUE
+	)
+	@ApiOperation(
+		value = "Delete configuration",
+		notes = "Delete configuration"
+	)
 	@ResponseBody
 	public ResponseEntity<?> deleteConfig(
-			@ApiIgnore @RequestHeader(value = "Authorization", required = false) String authorizationHeader,
-			@ApiParam(value = "Configuration name") @PathVariable(value = "config") String config) {
-
+		@ApiIgnore @RequestHeader(value = "Authorization", required = false) String authorizationHeader,
+		@ApiParam(value = "Configuration name") @PathVariable(value = "config") String config
+	) {
 		ObjectMapper mapper = new ObjectMapper();
-
 		Map<String, Object> log = MessageHelper.initializeLog(MessageHelper.METHOD_DELETECONFIG, config);
 
 		try {
@@ -194,20 +249,34 @@ public class CombinerController {
 
 	}
 
-	@PreAuthorize("!@authz.isSecured() or #oauth2.hasScope('combiner.'.concat(#config)) or #config.startsWith('public-')")
-	@RequestMapping(method = RequestMethod.POST, value = "/{targetType}/{config}", produces = MediaType.TEXT_PLAIN_VALUE, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-	@ApiOperation(value = "Export data to CSV or XLSX", notes = "Parse data and transform them to CSV or XLSX")
+	@PreAuthorize(
+		"!@authz.isSecured()"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.read'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
+		+ " or #oauth2.hasScope('fdns.combiner.*.read')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
+	)
+	@RequestMapping(
+		method = RequestMethod.POST,
+		value = "/{targetType}/{config}",
+		produces = MediaType.TEXT_PLAIN_VALUE,
+		consumes = MediaType.MULTIPART_FORM_DATA_VALUE
+	)
+	@ApiOperation(
+		value = "Export data to CSV or XLSX",
+		notes = "Parse data and transform them to CSV or XLSX"
+	)
 	@ResponseBody
 	public ResponseEntity<?> transform(
-			@ApiIgnore @RequestHeader(value = "Authorization", required = false) String authorizationHeader,
-			@RequestPart("file") MultipartFile[] file,
-			@ApiParam(value = "Target Type", allowableValues = "csv,xlsx") @PathVariable(value = "targetType", required = true) String targetType,
-			@ApiParam(value = "Combiner Configuration") @PathVariable(value = "config", required = true) String config,
-			@ApiParam(value = "Filename expected") @RequestParam(value = "filename", required = false) String filename,
-			@ApiParam(value = "Orientation", allowableValues = "portrait,landscape", defaultValue = "portrait") @RequestParam(value = "orientation", required = false) String orientation, 
-			@ApiParam(value = "Include Header", defaultValue = "true") @RequestParam(value = "includeHeader", required = false) boolean includeHeader,
-			@ApiParam(value = "Sort file names", defaultValue = "false") @RequestParam(value = "sortFiles", required = false) boolean sortFiles) {
-
+		@ApiIgnore @RequestHeader(value = "Authorization", required = false) String authorizationHeader,
+		@RequestPart("file") MultipartFile[] file,
+		@ApiParam(value = "Target Type", allowableValues = "csv,xlsx") @PathVariable(value = "targetType", required = true) String targetType,
+		@ApiParam(value = "Combiner Configuration") @PathVariable(value = "config", required = true) String config,
+		@ApiParam(value = "Filename expected") @RequestParam(value = "filename", required = false) String filename,
+		@ApiParam(value = "Orientation", allowableValues = "portrait,landscape", defaultValue = "portrait") @RequestParam(value = "orientation", required = false) String orientation, 
+		@ApiParam(value = "Include Header", defaultValue = "true") @RequestParam(value = "includeHeader", required = false) boolean includeHeader,
+		@ApiParam(value = "Sort file names", defaultValue = "false") @RequestParam(value = "sortFiles", required = false) boolean sortFiles
+	) {
 		Map<String, Object> log = MessageHelper.initializeLog(MessageHelper.METHOD_COMBINE, config);
 
 		try {
@@ -271,15 +340,25 @@ public class CombinerController {
 		}
 	}
 
-	@RequestMapping(value = "/{targetType}/flatten", method = RequestMethod.POST)
-	@ApiOperation(value = "Flatten JSON object", notes = "Flatten a JSON object to JSON, CSV and XLSX")
+	@RequestMapping(
+		value = "/{targetType}/flatten",
+		method = RequestMethod.POST
+	)
+	@ApiOperation(
+		value = "Flatten JSON object",
+		notes = "Flatten a JSON object to JSON, CSV and XLSX"
+	)
 	@ResponseBody
-	public ResponseEntity<?> flatten(@RequestPart("file") MultipartFile file, @ApiParam(value = "Target Type", allowableValues = "json,csv,xlsx") @PathVariable(value = "targetType", required = true) String targetType) {
+	public ResponseEntity<?> flatten(
+		@RequestPart("file") MultipartFile file,
+		@ApiParam(value = "Target Type",
+		allowableValues = "json,csv,xlsx") @PathVariable(value = "targetType",
+		required = true) String targetType
+	) {
 		ObjectMapper mapper = new ObjectMapper();
-
 		Map<String, Object> log = MessageHelper.initializeLog(MessageHelper.METHOD_FLATTEN, null);
-		try {
 
+		try {
 			if (!("json".equalsIgnoreCase(targetType) || "csv".equalsIgnoreCase(targetType) || "xlsx".equalsIgnoreCase(targetType)))
 				throw new ServiceException(MessageHelper.ERROR_INVALID_TARGET_TYPE);
 
@@ -329,10 +408,12 @@ public class CombinerController {
 		}
 	}
 
-	private Map<String, Map<String, String>> getAggregatedData(MultipartFile[] files, JSONObject configJson) throws IOException, JSONException {
+	private Map<String, Map<String, String>> getAggregatedData(
+		MultipartFile[] files,
+		JSONObject configJson
+	) throws IOException, JSONException {
 		Map<String, Map<String, String>> aggregatedMap = new LinkedHashMap<>();
 		for (MultipartFile file : files) {
-
 			boolean parsed = true;
 			JSONObject json = null;
 			

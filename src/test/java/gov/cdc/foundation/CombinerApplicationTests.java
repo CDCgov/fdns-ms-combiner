@@ -41,7 +41,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 		"value.separator=;",
 		"logging.fluentd.host=fluentd", 
 		"logging.fluentd.port=24224",
-		"proxy.hostname=localhost",
+		"proxy.hostname=",
 		"security.oauth2.resource.user-info-uri=",
 		"security.oauth2.protected=",
 		"security.oauth2.client.client-id=",
@@ -64,7 +64,7 @@ public class CombinerApplicationTests {
 		JacksonTester.initFields(this, objectMapper);
 		
 		// Define the object URL
-		System.setProperty("OBJECT_URL", "http://fdns-ms-object:8083");
+		System.setProperty("OBJECT_URL", "http://fdns-ms-stubbing:3002/object");
 	}
 	
 	@Test
