@@ -265,7 +265,7 @@ public class CombinerController {
 	@ApiOperation(
 		value = "Export data to CSV or XLSX",
 		notes = "Parse data and transform them to CSV or XLSX\n***Multiple File Upload not working in swagger. Please" +
-				" use another tool to make calls which require it***"
+				" use another tool to make calls which require it.***"
 	)
 	@ResponseBody
 	public ResponseEntity<?> transform(
