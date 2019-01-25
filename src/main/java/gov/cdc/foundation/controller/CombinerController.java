@@ -85,16 +85,16 @@ public class CombinerController {
 		}
 	}
 
-//	@PreAuthorize(
-//		"!@authz.isSecured()"
-//		+ " or #config.startsWith('public-')"
-//		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.create'))"
-//		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.update'))"
-//		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
-//		+ " or #oauth2.hasScope('fdns.combiner.*.create')"
-//		+ " or #oauth2.hasScope('fdns.combiner.*.update')"
-//		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
-//	)
+	@PreAuthorize(
+		"!@authz.isSecured()"
+		+ " or #config.startsWith('public-')"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.create'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.update'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
+		+ " or #oauth2.hasScope('fdns.combiner.*.create')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.update')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
+	)
 	@RequestMapping(
 		value = "config/{config}",
 		method = RequestMethod.PUT,
@@ -113,16 +113,16 @@ public class CombinerController {
 		return upsertConfig(authorizationHeader, payload, config);
 	}
 
-//	@PreAuthorize(
-//		"!@authz.isSecured()"
-//		+ " or #config.startsWith('public-')"
-//		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.create'))"
-//		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.update'))"
-//		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
-//		+ " or #oauth2.hasScope('fdns.combiner.*.create')"
-//		+ " or #oauth2.hasScope('fdns.combiner.*.update')"
-//		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
-//	)
+	@PreAuthorize(
+		"!@authz.isSecured()"
+		+ " or #config.startsWith('public-')"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.create'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.update'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
+		+ " or #oauth2.hasScope('fdns.combiner.*.create')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.update')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
+	)
 	@RequestMapping(
 		value = "config/{config}",
 		method = RequestMethod.POST,
@@ -168,14 +168,14 @@ public class CombinerController {
 		}
 	}
 
-//	@PreAuthorize(
-//		"!@authz.isSecured()"
-//		+ " or #config.startsWith('public-')"
-//		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.read'))"
-//		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
-//		+ " or #oauth2.hasScope('fdns.combiner.*.read')"
-//		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
-//	)
+	@PreAuthorize(
+		"!@authz.isSecured()"
+		+ " or #config.startsWith('public-')"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.read'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
+		+ " or #oauth2.hasScope('fdns.combiner.*.read')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
+	)
 	@RequestMapping(
 		value = "config/{config}",
 		method = RequestMethod.GET,
@@ -208,13 +208,13 @@ public class CombinerController {
 
 	}
 
-//	@PreAuthorize(
-//		"!@authz.isSecured()"
-//		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.delete'))"
-//		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
-//		+ " or #oauth2.hasScope('fdns.combiner.*.delete')"
-//		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
-//	)
+	@PreAuthorize(
+		"!@authz.isSecured()"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.delete'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
+		+ " or #oauth2.hasScope('fdns.combiner.*.delete')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
+	)
 	@RequestMapping(
 		value = "config/{config}",
 		method = RequestMethod.DELETE,
@@ -249,13 +249,13 @@ public class CombinerController {
 
 	}
 
-//	@PreAuthorize(
-//		"!@authz.isSecured()"
-//		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.read'))"
-//		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
-//		+ " or #oauth2.hasScope('fdns.combiner.*.read')"
-//		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
-//	)
+	@PreAuthorize(
+		"!@authz.isSecured()"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.read'))"
+		+ " or #oauth2.hasScope('fdns.combiner.'.concat(#config).concat('.*'))"
+		+ " or #oauth2.hasScope('fdns.combiner.*.read')"
+		+ " or #oauth2.hasScope('fdns.combiner.*.*')"
+	)
 	@RequestMapping(
 		method = RequestMethod.POST,
 		value = "/{targetType}/{config}",
